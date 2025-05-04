@@ -1,0 +1,218 @@
+---
+baseURL: https://romaindeville.fr
+title: R. Deville resume, blog & portfolio
+
+module:
+  imports:
+    - path: github.com/hugo-toha/toha/v4
+  mounts:
+    - source: static/files
+      target: static/files
+    - source: ./node_modules/flag-icon-css/flags
+      target: static/flags
+    - source: ./node_modules/@fontsource/mulish/files
+      target: static/files
+    - source: ./node_modules/katex/dist/fonts
+      target: static/fonts
+
+# Manage languages
+languageCode: en
+# For any more details, see: https://gohugo.io/content-management/multilingual/
+languages:
+  en:
+    languageName: English
+    languageCode: en
+    title: R. Deville's Resume, Blog and Portfolio
+    weight: 1
+  fr:
+    languageName: Français
+    languageCode: fr
+    title: CV, Blog et Portfolio de R. Deville
+    weight: 2
+
+# Force a locale to be use, really useful to develop the application !
+# Should be commented in production, the "weight" should rocks.
+defaultContentLanguage: en
+
+# Allow raw html in markdown file
+markup:
+  asciidocExt:
+    attributes: {}
+    extensions:
+      - asciidoctor-html5s
+      - asciidoctor-bibtex
+      - asciidoctor-diagram
+      - asciidoctor-interdoc-reftext
+      - asciidoctor-katex
+      - asciidoctor-latex
+      - asciidoctor-mathematical
+      - asciidoctor-question.
+    noHeaderOrFooter: false
+    preserveTOC: false
+    sectionNumbers: true
+    workingFolderCurrent: false
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+# At least HTML and JSON are required for the main HTML content and
+# client-side JavaScript search
+outputs:
+  home:
+    - html
+    - rss
+    - json
+
+# Enable global emoji support
+enableEmoji: true
+
+# Site parameters
+params:
+  # GitHub repo URL of your site
+  gitRepo: https://framagit.org/rdeville-public/websites/romaindeville-fr
+  # Default branch of your Git repo
+  gitBranch: main
+
+  # Configure the number of section title visible in the top navbar
+  topNavbar:
+    maxVisibleSections: 10
+
+  # Background image of the landing page
+  background: /images/site/background.jpg
+  # Background image of the landing page for dark theme
+  #darkBackground: /images/site/background.jpg
+
+  # Provide logos for your site. The inverted logo will be used in the initial
+  # transparent navbar and the main logo will be used in the non-transparent navbar.
+  logo:
+    main: /images/site/main-logo.png
+    inverted: /images/site/inverted-logo.png
+    favicon: /images/site/favicon.png
+
+  # Configure various features of this theme
+  features:
+    # Configure theme color settings
+    theme:
+      enable: true
+      services:
+        light: true
+        dark: true
+        default: system
+
+    # Enable and configure blog posts
+    blog:
+      enable: true
+      showAuthor: true # shows the author of post (defaults true)
+
+    # Specify whether you want to show Table of Contents in reading page
+    toc:
+      enable: true
+
+    # Show tags under the post title
+    tags:
+      enable: true
+      on_card: true
+
+    # Specify whether to show flag in the language selector
+    flags:
+      enable: true
+      # Specify different country flag for a language
+      flagOverwrites:
+        - languageCode: en
+          countryCode: us
+
+    # Enable this to use `embed-pdf` shortcode.
+    embedpdf:
+      enable: true
+
+    # Enable this to create flowcharts using shortcodes.
+    flowchart:
+      enable: true
+      services:
+        mermaid:
+          theme: forest
+
+    # Enable this to create mathematic expressions using `$$` blocks
+    math:
+      enable: true
+      services:
+        # https://katex.org/docs/autorender.html#api for more configurations
+        katex:
+          delimiters:
+            - left: $$
+              right: $$
+              display: true
+            - left: \\[
+              right: \\]
+              display: true
+            - left: $
+              right: $
+              display: false
+            - left: \\(
+              right: \\)
+              display: false
+
+    # Enable to use custom syntax highlight
+    # For more details: https://gohugo.io/content-management/syntax-highlighting/
+    syntaxHighlight:
+      enable: true
+
+    # Enable to use `video-player` shortcode
+    videoPlayer:
+      enable: true
+
+    # Enables copy code button
+    copyCodeButton:
+      enable: true
+
+    # Enable reading time support in post cards and in post pages
+    readingTime:
+      enable: true
+
+    # Number of posts to show to each page
+    pagination:
+      maxPostsPerPage: 12
+
+    # Enable and configure portfolio
+    portfolio:
+      enable: false
+    # Enable & configure "Notes" features
+    notes:
+      enable: false
+    # Enable comment feature. There, should be only one of them.
+    comment:
+      enable: false
+    # Enable Analytics
+    analytics:
+      enabled: false
+    # Enable Support
+    support:
+      enable: false
+
+  # Provide footer configuration.
+  footer:
+    enable: true
+    # Put your template in "layouts/partials" folder of your repo.
+    # template: footer.html
+
+    # Show/hide credentials section in the footer
+    credentials:
+      enable: true
+    # Show/hide disclaimer notice in the footer
+    disclaimer:
+      enable: true
+
+    # Show/hide navigation in the footer
+    navigation:
+      enable: false
+      customMenus: false
+    # Show/hide "Contact Me" section in the footer
+    contactMe:
+      enable: false
+    # Show/hide newsletter section in the footer
+    newsletter:
+      enable: false
