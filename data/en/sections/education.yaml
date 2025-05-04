@@ -1,0 +1,40 @@
+section:
+  name: Education
+  id: education
+  enable: true
+  weight: 5
+  showOnNavbar: true
+
+degrees:
+- name: &insa Institut National des Sciences Appliquées de Lyon (INSA)
+  icon: fa-microscope
+  timeframe: 2014-2018
+  institution:
+    name: Ph.D in Computer Sciences
+  customSections:
+    - name: Thesis
+      content: |-
+        Spatio-temporal grid mining applied to image classification and cellular
+        automata analysis.
+- name: *insa
+  icon: fa-graduation-cap
+  timeframe: 2010-2014
+  institution:
+    name: M.Sc. in Computer Science & Engineering
+- name: Higher Secondary School Certificate
+  icon: fa-university
+  timeframe: 2010-2012
+  institution:
+    name: Classes Prépatoires Intégrées
+  customSections:
+    - name: Details
+      content: |-
+        2nd year in International Section (SCAN) with all sciences lessons in
+        English
+- name: Lycée Charles de Gaulle
+  icon: fa-school
+  timeframe: 2005-2010
+  institution:
+    name: |-
+      Scientific High School Diploma
+      Mathematical Major

@@ -1,0 +1,80 @@
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+
+designation: DevOps / SRE
+company:
+  name: Dougs Compta
+  url: "https://www.dougs.fr"
+
+summary: |-
+  IT enthusiast, I'm focused on Platform Administration, Automomatisation and
+  Observability.
+
+  I love everything related to IaC and automation through GitOps approach to
+  ensure tracability of deployment evolution, reconcialition when drifts occurs
+  and scalability.
+
+  I also pay a lot of attention to my volunteer investments and my commitment to
+  security and data privacy.
+
+socialLinks:
+  - name: Email
+    icon: "fas fa-envelope"
+    url: "pro@romaindeville.fr"
+  - name: Github
+    icon: "fab fa-github"
+    url: "https://www.github.com/rdeville"
+  - name: Framagit
+    icon: "fab fa-gitlab"
+    url: "https://framagit.org/rdeville"
+  - name: Gitlab
+    icon: "fab fa-gitlab"
+    url: "https://gitlab.com/r.deville"
+  - name: LinkedIn
+    icon: "fab fa-linkedin"
+    url: "https://linkedin.com/in/romaindeville"
+
+# You can put custom buttons to link your relevant resources.
+# For example, you can put link for your resume.
+resourceLinks:
+  - title: "EN-Color"
+    url: "files/resume.pdf"
+    logo: "/images/flags/us.png"
+  - title: "EN-Black & White"
+    url: "files/resume.pdf"
+    logo: "/images/flags/us.png"
+  - title: "FR-Color"
+    url: "files/resume.pdf"
+    logo: "/images/flags/fr.png"
+  - title: "FR-Black & White"
+    url: "files/resume.pdf"
+    logo: "/images/flags/fr.png"
+
+# Show your badges
+# You can show your verifiable certificates from https://www.credly.com.
+# You can also show a circular bar indicating the level of expertise on a certain skill
+badges:
+  - type: soft-skill-indicator
+    name: Teamwork
+    percentage: 85
+    color: "#4CAF50"
+  - type: soft-skill-indicator
+    name: Pedagogy
+    percentage: 85
+    color: "#FFEB3B"
+  - type: soft-skill-indicator
+    name: Documentation
+    percentage: 85
+    color: "#2196F3"
+  - type: soft-skill-indicator
+    name: Curiosity
+    percentage: 85
+    color: "#00BCD4"
+  - type: soft-skill-indicator
+    name: Autonomy
+    percentage: 85
+    color: "#9C27B0"

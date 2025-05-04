@@ -1,0 +1,191 @@
+# section information
+section:
+  name: Volunteer
+  id: volunteer
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  template: sections/volunteer.html
+
+volunteer:
+  - organization:
+      name: LOV
+      url: https://labovilleurbanne.fr/site/
+      logo: /images/sections/volunteers/lov.png
+      overview: |-
+        FabLab - "Laboratoire Ouvert Villeurbannais"
+      summary: >-
+        "LOV" is an association based in Villeurbanne which goals are:
+
+        * To offer its members __a shared workspace and access to uncommon
+          resources__ (3D printers, laser cutters, heavy machinery),
+        * __To promote the transmission__ of scientific and technological
+          knowledges and how to leverage them.
+      location: Villeurbanne, Rhône-Alpes, France
+      start: 2018-06-01
+      end: 2020-11-01
+      duration: 2 year & 7 months
+    positions:
+      - designation: Board Member
+        start: 2019-06-01
+        end: 2020-06-01
+        duration: 1 year
+        summary: |-
+            My main activities as a board member were:
+
+
+              * __Held opening hours__ on a weekly basis,
+              * __Maintenance__ of the workshop and the equipment,
+              * __Welcoming and training__ of the new members,
+              * __Organization of board meetings__ and reporting.
+
+  - organization:
+      name: Illyse
+      url: https://www.illyse.net
+      logo: /images/sections/volunteers/illyse.png
+      overview: Associative ISP in Lyon and Saint-Étienne
+      summary: |-
+          Illyse is a 1901 law association. Its purpose is to promote the use
+          and development of a __neutral and open computer network,  respectful
+          of its users and their privacy__.
+
+
+          Illyse is an __Internet Service Provider in the Lyon and Saint-Étienne
+          area__. Indeed, the best way to __promote Net Neutrality__ is simply
+          to be part of this network and to participate in its development.
+      pdf_desc: |-
+          Illyse is an association which goals are the promotion of a neutral
+          and open computer network, respectful of its users and their privacy.
+      location: Lyon, Rhône-Alpes, France
+      start: 2016-03-01
+      end: 2020-11-01
+      duration: 4 years & 8 months
+    positions:
+      - designation: Board Member
+        start: 2017-03-01
+        end: 2020-11-01
+        duration: 3 years & 8 months
+        summary: |-
+            My main activities as a board member were:
+
+
+              * __Held opening hours__ on a monthly basis,
+              * __Welcome__ the new members,
+              * __Organization of board meetings__ and writing reports.
+              * __Preparation and gave talks__ in events such as
+                "[Les Journées du Logiciel Libre
+                (JDLL)](https://epn.salledesrancy.com/journeelogiciellibre/)"
+  - organization:
+      name: Salle des Rancy
+      url: https://www.salledesrancy.com/
+      logo: /images/sections/volunteers/mpt.png
+      overview: |-
+        MJC, Maison Pour Tous - Salle des Rancy
+      summary: |-
+          "Maison Pour Tous" (MPT) is one of the 12 "__Maison des Jeunes et
+          de la Culture__" (MJC) in Lyon. Its goals are to provide access to
+          culture and leisure for as many people as possible, to develop
+          civic commitment and to promote personal development. MPT's activities are
+          divided into five sectors:
+
+
+            * Childhood / youth,
+            * Sociocultural activities,
+            * Sporting activities,
+            * Information Technologies Education,
+            * Cultural and civic actions.
+
+      pdf_desc: |-
+          "Maison Pour Tous" (MPT) aims is to provide access to
+          culture and leisure for as many people as possible, to develop
+          citizenship and to promote personal development.
+      location: Lyon, Rhône-Alpes, France
+      start: 2016-06-01
+      end: 2020-11-01
+      duration: 4 years & 5 months
+    positions:
+      - designation: Volunteer
+        start: "2016-06-01"
+        end: "2020-11-01"
+        duration: 4 years & 5 months
+        summary: |-
+            My volunteer activity within the MPT was almost exclusively within
+            the "[Espace Public Numérique](https://epn.salledesrancy.com)
+            (EPN)" (Digital Public Space) pole.<br>
+
+            My activities within EPN were:
+
+            * Realization of __workshops__ for MPT members on subjects such as
+              installation of a media center or a retro console center on a
+              Raspberry Pi, introduction to home automation.
+            * __EPN support for system administration__:
+                * Maintenance of computer labs (~ 40 PCs),
+                * Implementation of maintenance automation tools,
+                * Documentation of automation tools
+                * Training of EPN administrator,
+                * Installation of new PCs and servers,
+            * __Volunteer organizer__ for IT events organized by EPN:
+                * [Les Expériences
+                  Numériques (Digital Experiences)](https://epn.salledesrancy.com/experiences-numeriques/)
+                * [Les Journées du Logiciel Libre
+                  (JDLL - Open-Source Software Days)](https://epn.salledesrancy.com/journeelogiciellibre/)
+
+  - organization:
+      name: Graines d'Images
+      url: https://www.grainesdimages.fr/
+      logo: /images/sections/volunteers/grainesdimages.png
+      overview: INSA Lyon photography association
+      summary: |-
+          "Graines d’Images" is __one of the oldest INSA's student unions__. It
+          provides photographic coverage at every show, concert and events to
+          offer lasting memories to the students.
+
+          The association offers to its members:
+
+            * __Equipment loan, a Studio and a film development laboratory__,
+            * __Coverage of various events__, mainly concerts, plays, sports
+              competitions, in connection with the University student
+              unions,
+            * __Training courses__, for beginners as well as for experienced
+              ones around topics like shooting, image processing.
+            * __Workshops and outside photographic session__ to practice the
+              theoretical knowledge acquired during training.
+
+      pdf_desc: |-
+          "Graines d'Images" is present at lots of events on the Doua campus,
+          offers training, equipment loan,…
+      location: Villeurbanne, Rhône-Alpes, France
+      start: 2009-06-01
+      end: 2014-06-01
+      duration: 5 years
+    positions:
+      - designation: Vice-President
+        start: 2010-06-01
+        end: 2011-06-01
+        duration: 1 year
+        summary: |-
+            My main responsibilities as Vice-President were:
+
+              * __Held opening hours__ on an almost daily basis,
+              * __Management of the day-to-day life__ of the union:
+                * Inventory management and equipment loan,
+                * Collaboration with the other University unions,
+                * Organization of photographic coverage of events,
+                * Welcome new members,
+              * __Organization of meetings__ with the board members,
+              * __Maintenance of the equipment__,
+      - designation: Financial Administrator
+        start: 2012-06-01
+        end: 2013-06-01
+        duration: 1 year
+        summary: |-
+            My main responsibilities as financial administrator were:
+
+              * __Held opening hours__ on an almost daily basis,
+              * __Cash flow management__, sale and purchase of equipment, expense
+              report, membership fees,
+              * __Management of the day-to-day life__ of the union:
+                * Inventory management and equipment loan,
+                * Welcome new members,
+              * __Organization of meetings__ with the board members,
+              * __Maintenance of the equipment__,
