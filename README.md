@@ -35,7 +35,7 @@
 [changelog_badge]: https://img.shields.io/badge/Changelog-Python%20Semantic%20Release-yellow
 [changelog_badge_url]: https://github.com/python-semantic-release/python-semantic-release
 
-Content of website hosted at romaindeville.fr rendered using 
+Content of website hosted at romaindeville.fr rendered using
 [Hugo](https://gohugo.io/) and theme [Toha](https://github.com/hugo-toha/toha).
 
 ---
