@@ -1,0 +1,3 @@
+{{ partial "helpers/script-bundle.html" }}
+{{ $script := resources.Get "scripts/home.js" }}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>

@@ -1,0 +1,93 @@
+{{ $sectionID := replace (lower .section.name) " " "-"  }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+{{ $author:= site.Data.author }}
+{{ if (index site.Data site.Language.Lang).author }}
+  {{ $author = (index site.Data site.Language.Lang).author }}
+{{ end }}
+
+<div class="container anchor p-lg-5 about-section" id="{{ $sectionID }}">
+  <div class="row pt-sm-2 pt-md-4 align-self-center">
+    <!-- Summary -->
+    <!-- ================================================================== -->
+    <div class="col-lg-6 col-md-12">
+      <h3 class="basic-name p-1">{{ $author.name }}</h3>
+      {{ if .designation }}
+      <h5 class="position fw-bold p-1">
+        {{ .designation }}
+        {{ if .company }}
+        {{ i18n "at"}} <a href="{{ .company.url }}" title="{{ .company.name }}" target="_blank" rel="noopener">{{ .company.name }}</a>
+        {{ end }}
+      </h5>
+      {{ end }}
+      <p class="p-1 text-justify">
+        {{ .summary | markdownify }}
+      </p>
+      <div class="row">
+        <div class="col-12 col-md-6 mt-3 mb-3">
+          {{ if $author.contactInfo.email }}
+          <p class="text-center">
+            <a href="mailto:{{ $author.contactInfo.email }}" target="../">
+              <i class="social-icon-color fa fa-envelope"> </i>
+              {{ $author.contactInfo.email }}
+            </a>
+          </p>
+          {{ end }}
+          {{ if $author.contactInfo.phone }}
+          <p class="text-center">
+            <a href="tel:{{ $author.contactInfo.phone }}" target="../">
+              <i class="social-icon-color fa fa-phone"> </i>
+              {{ $author.contactInfo.phone }}
+            </a>
+          </p>
+          {{ end }}
+        </div>
+        <div class="col-12 col-md-6 mt-3 mb-3">
+          <div class="text-container">
+            <ul class="social-link d-flex mx-auto justify-content-center">
+              {{ range .socialLinks }}
+              <li >
+                <a  href="{{ .url }}" title="{{ .name }}" target="_blank" rel="{{.rel | default "noopener"}}"><i class="social-icon-color {{ .icon }}"></i></a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ if .resourceLinks }}
+          <div class="container justify-content-center">
+            <div class="dropdown d-flex mx-auto justify-content-centerd-flex mx-auto justify-content-center">
+              <div style="width: 100%;">
+                <button style="width: 100%;" class="dropbtn">{{ i18n "download_resume"}}</button>
+                <div class="dropdown-content" style="width: 100%;" >
+                {{ range .resourceLinks }}
+                  <a href="{{ .url | relURL }}" title="{{ .title }}" target="#">
+                    {{ if .logo }}
+                    {{ $logoImage := resources.Get .logo }}
+                    <img
+                      src="{{ $logoImage.RelPermalink }}"
+                      alt="{{ .name }}"
+                      class="small-logo"
+                    />
+                    {{ end }}
+                    {{ .title }}
+                  </a>
+                {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    <!-- Soft skills circular-progressbar -->
+    <div class="col-lg-6 col-md-12 pt-5 ps-md-4 ps-sm-3 pt-sm-0 mt-3 mb-3">
+      <div class="row">
+        {{ range .badges }}
+          {{ partial "misc/badge.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>

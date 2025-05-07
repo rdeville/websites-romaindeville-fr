@@ -1,0 +1,116 @@
+{{ $sectionID := replace (lower .section.name) " " "-"  }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+<div class="container-fluid anchor pb-5 volunteer-section">
+  {{ if not (.section.hideTitle) }}
+    <h1 class="text-center">
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ else }}
+    <h1 class="text-center" style="display: none">
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ end }}
+
+  <div class="row align-items-center justify-content-center mx-5 pb-5">
+    <ul class="volunteer-timeline">
+    {{ $totalExperiences:= len .volunteer }}
+    {{ range $index,$experience:= .volunteer }}
+      {{ if eq (mod $index 2) 0 }}
+      <li class="volunteer-timeline-inverted">
+      {{ else }}
+      <li>
+      {{ end }}
+     <div class="volunteer-timeline-badge">
+          <i class="fa fa-circle"></i>
+        </div>
+        <div class="p-1 volunteer-timeline-panel">
+          <div class="row">
+            <div class="col-12 col-md-8 volunteer-timeline-heading">
+              <h4 class="company">
+    {{ if .organization.url }}
+                <a href="{{ .organization.url }}">
+    {{ end }}
+    {{ if .organization.logo }}
+      {{ $logoImage := resources.Get .organization.logo }}
+                <img
+                  src="{{ $logoImage.RelPermalink }}"
+                  alt="{{ .name }}"
+                  style="max-height: 1.25rem;"
+                />
+    {{ end }}
+                {{ .organization.name }}
+    {{ if .organization.url }}
+                </a>
+    {{ end }}
+              </h4>
+            </div>
+            <div class="col-md-6">
+            <!-- Empty DIV to force alignment of next div to the right -->
+            </div>
+            <div class="col-12 col-md-6">
+{{ if .organization.start }}
+              <div class="container text-right date mt-sm-n5">
+                <i class="fa fa-calendar-alt"></i>
+                {{ .organization.start }} -
+                {{ if .organization.end }}
+                {{ .organization.end }}
+                {{ else }}
+                {{ i18n "present" }}
+                {{ end }}
+              </div>
+{{ end }}
+            </div>
+            <div class="col-12 text-right">
+              <div class="container text-right location">
+                <i class="fa fa-map-marker-alt"></i>
+                {{ .organization.location }}
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="container volunteer-timeline-body">
+                <p class="font-weight-bold">
+                  <i>{{ .organization.overview }}</i><br/>
+                </p>
+{{ if .organization.summary }}
+                <span class="volunteer-organization-description">
+                  {{ .organization.summary | markdownify }}
+                </span>
+{{ end }}
+              </div>
+            </div>
+          </div>
+          <div class="volunteer-timeline-footer">
+            <div class="volunteer-timeline-footer">
+{{ range .positions }}
+              <div class="row">
+                <div class="col-5 position">
+                  {{ .designation }}
+                </div>
+                <div class="col-7">
+                  <p class="text-right date">
+                    <i class="fa fa-calendar-alt"> </i>
+                    {{ .start }} -
+                    {{ if .end }}
+                    {{ .end }}
+                    {{ else }}
+                    {{ i18n "present" }}
+                    {{ end }}
+                  </p>
+                </div>
+{{ if .summary }}
+                <div class="container volunteer-position-details">
+                  {{ .summary | markdownify }}
+                </div>
+{{ end }}
+              </div>
+{{ end }}
+            </div>
+          </div>
+        </div>
+      </li>
+{{ end }}
+    </ul>
+  </div>
+</div>
+</div>
