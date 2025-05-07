@@ -3,7 +3,7 @@
   {{ $sectionID = .section.id }}
 {{ end }}
 
-<div class="container-fluid anchor pb-5 volunteer-section">
+<div class="container anchor pb-5 volunteer-section">
   {{ if not (.section.hideTitle) }}
     <h1 class="text-center">
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
@@ -12,105 +12,106 @@
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
   {{ end }}
 
-  <div class="row align-items-center justify-content-center mx-5 pb-5">
+  <div class="row align-items-center justify-content-center d-flex">
     <ul class="volunteer-timeline">
     {{ $totalExperiences:= len .volunteer }}
     {{ range $index,$experience:= .volunteer }}
       {{ if eq (mod $index 2) 0 }}
-      <li class="volunteer-timeline-inverted">
+      <li class="volunteer-point volunteer-timeline-inverted">
       {{ else }}
-      <li>
+      <li class="volunteer-point">
       {{ end }}
-     <div class="volunteer-timeline-badge">
-          <i class="fa fa-circle"></i>
-        </div>
-        <div class="p-1 volunteer-timeline-panel">
-          <div class="row">
-            <div class="col-12 col-md-8 volunteer-timeline-heading">
-              <h4 class="company">
-    {{ if .organization.url }}
-                <a href="{{ .organization.url }}">
-    {{ end }}
-    {{ if .organization.logo }}
-      {{ $logoImage := resources.Get .organization.logo }}
-                <img
-                  src="{{ $logoImage.RelPermalink }}"
-                  alt="{{ .name }}"
-                  style="max-height: 1.25rem;"
+      <div class="volunteer-timeline-badge">
+        <i class="fa fa-circle"></i>
+      </div>
+      <div class="p-1 volunteer-timeline-panel">
+        <div class="row">
+          <div class="col-12 col-md-6 volunteer-timeline-heading">
+            <h4 class="company d-flex align-items-center">
+            {{ $logoImage:= resources.Get .organization.logo }}
+            {{ if $logoImage }}
+              <img
+                class="mx-2"
+                style="max-height: 2.5rem"
+                src="{{ $logoImage.RelPermalink }}"
+                alt="{{ .name }}"
                 />
-    {{ end }}
-                {{ .organization.name }}
-    {{ if .organization.url }}
-                </a>
-    {{ end }}
-              </h4>
-            </div>
-            <div class="col-md-6">
-            <!-- Empty DIV to force alignment of next div to the right -->
-            </div>
-            <div class="col-12 col-md-6">
-{{ if .organization.start }}
-              <div class="container text-right date mt-sm-n5">
-                <i class="fa fa-calendar-alt"></i>
-                {{ .organization.start }} -
-                {{ if .organization.end }}
-                {{ .organization.end }}
-                {{ else }}
-                {{ i18n "present" }}
-                {{ end }}
-              </div>
-{{ end }}
-            </div>
-            <div class="col-12 text-right">
-              <div class="container text-right location">
-                <i class="fa fa-map-marker-alt"></i>
-                {{ .organization.location }}
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="container volunteer-timeline-body">
-                <p class="font-weight-bold">
-                  <i>{{ .organization.overview }}</i><br/>
-                </p>
-{{ if .organization.summary }}
-                <span class="volunteer-organization-description">
-                  {{ .organization.summary | markdownify }}
-                </span>
-{{ end }}
-              </div>
+            {{ end }}
+              {{ .organization.name }}
+            </h4>
+
+            <p class="fw-bold mx-2">
+              <i>{{ .organization.overview }}</i><br/>
+            </p>
+          </div>
+          <div class="col-12 col-md-6 px-3">
+            <p class="text-muted text-end">
+              {{ $start := time.Format "Jan 2006" (time.AsTime .organization.start) }}
+              {{ $end := "" }}
+              {{ if .organization.end }}
+                {{ $end = time.Format "Jan 2006" (time.AsTime .organization.end) }}
+              {{ else }}
+                {{ $end := i18n "present" }}
+              {{ end }}
+              <span class="fa fa-calendar-alt"></span>
+              {{ $start }} - {{ $end }}
+              {{ if .organization.duration }}
+              <br/>
+              {{ .organization.duration }}
+              {{ end }}
+            </p>
+            <p class="text-muted text-end">
+                <i class="fa-solid fa-location-dot"></i> {{ .organization.location }}
+            </p>
+          </div>
+          <div class="col-12">
+            <div class="container volunteer-timeline-body">
+
+              {{ if .organization.summary }}
+              <span class="volunteer-organization-description">
+                {{ .organization.summary | markdownify }}
+              </span>
+              {{ end }}
+              {{ if .organization.details }}
+                {{ .organization.details | markdownify }}
+              {{ end }}
             </div>
           </div>
-          <div class="volunteer-timeline-footer">
-            <div class="volunteer-timeline-footer">
-{{ range .positions }}
-              <div class="row">
-                <div class="col-5 position">
-                  {{ .designation }}
+          {{ range .positions }}
+            <div class="col-12 justify-content-center">
+                <hr class="mx-1"/>
+                <div class="row mx-2">
+                  <div class="col-12 col-md-6 pl-3">
+                    <h5>{{ .designation }}</h5>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <p class="text-muted text-end">
+                      {{ $start := time.Format "Jan 2006" (time.AsTime .start) }}
+                      {{ $end := "" }}
+                      {{ if .end }}
+                        {{ $end = time.Format "Jan 2006" (time.AsTime .end) }}
+                      {{ else }}
+                        {{ $end := i18n "present" }}
+                      {{ end }}
+                      <span class="fa fa-calendar-alt"></span>
+                      {{ $start }} - {{ $end }}
+                      {{ if .duration }}
+                      <br/>
+                      {{ .duration }}
+                      {{ end }}
+                    </p>
+                  </div>
+                  <div class="col-12">
+                    <p>
+                      {{ .summary | markdownify }}
+                    </p>
+                  </div>
                 </div>
-                <div class="col-7">
-                  <p class="text-right date">
-                    <i class="fa fa-calendar-alt"> </i>
-                    {{ .start }} -
-                    {{ if .end }}
-                    {{ .end }}
-                    {{ else }}
-                    {{ i18n "present" }}
-                    {{ end }}
-                  </p>
-                </div>
-{{ if .summary }}
-                <div class="container volunteer-position-details">
-                  {{ .summary | markdownify }}
-                </div>
-{{ end }}
-              </div>
-{{ end }}
             </div>
-          </div>
+          {{ end }}
         </div>
       </li>
-{{ end }}
+    {{ end }}
     </ul>
   </div>
-</div>
 </div>

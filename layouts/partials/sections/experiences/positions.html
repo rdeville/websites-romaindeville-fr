@@ -1,49 +1,103 @@
+<!-- Add the positions information -->
 <div class="col-10 col-lg-8">
-  <div class="experience-entry-heading">
-    {{ $logoImage:= resources.Get .company.logo}}
-    {{ $darkLogoImage:= resources.Get .company.darkLogo}}
-    {{ if $logoImage }}
-    <div class="logo-holder">
-      <img class="company-logo light-logo" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" />
-      {{ if $darkLogoImage }}
-      <img class="company-logo dark-logo" src="{{ $darkLogoImage.RelPermalink }}" alt="{{ .name }}" />
+  <div class="row">
+    <hr>
+    <div class="col-12 col-md-7">
+      <h4 class="designation fw-bold">{{ .designation }}</h4>
+      {{ if .subdesignation }}
+      <h6 class="designation">{{ .subdesignation }}</h6>
       {{ end }}
     </div>
-    {{ end }}
-    <!-- Total experience duration on a company is time between the starting date of the oldest position and ending date of most recent position -->
-    {{ $oldestPosition := index (last 1 .positions) 0}}
-    {{ $mostRecentPosition := index (first 1 .positions) 0}}
-    <div class="company-heading">
-      <h5>{{ if .company.url }}<a href={{.company.url}} title="{{ .company.name }}" target="_blank" rel="noopener">{{ .company.name }}</a>{{ else }}{{ .company.name }}{{ end }}</h5>
-      <p class="text-muted">
-          {{ $oldestPosition.start }} - {{ if $mostRecentPosition.end }}{{ $mostRecentPosition.end }}{{ else }}{{ i18n "present" }}{{ end }}
+
+    {{ $id := printf "%s-%s" .start  .end }}
+
+    <div class="col-12 col-md-5">
+      <p class="text-muted text-end">
+        {{ $start := time.Format "Jan 2006" (time.AsTime .start) }}
+        {{ $end := "" }}
+        {{ if .end }}
+          {{ $end = time.Format "Jan 2006" (time.AsTime .end) }}
+        {{ else }}
+          {{ $end := i18n "present" }}
+        {{ end }}
+        <span class="fa fa-calendar-alt"></span>
+        {{ $start }} - {{ $end }}
+        {{ if .duration }}
+        <br/>
+        {{ .duration }}
+        {{ end }}
       </p>
     </div>
-    <p class="text-muted">
-        <i class="fa-solid fa-location-dot"></i> {{ .company.location }}
-    </p>
-    <!-- Add company overview -->
-    <p>{{ .company.overview | markdownify }}</p>
-  </div>
-  <!-- Add the positions information -->
-  <div class="positions">
-  {{ range $index,$position:= .positions }}
-    <div class="company-heading">
-      <h5 class="designation">{{ $position.designation }}</h5>
-      <p class="text-muted">{{ $position.start }} - {{if $position.end }} {{ $position.end }} {{else}} {{ i18n "present" }} {{end}}</p>
-    </div>
-    <p>
-      {{ $position.overview | markdownify }}
-    </p>
+
     <!-- Add the responsibilities handled at this position -->
-    {{ if $position.responsibilities }}
+    <p>
+      {{ .overview | markdownify }}
+    </p>
+    {{ if .responsibilities }}
       <h6 class="text-heading">{{ i18n "responsibilities" }}</h6>
       <ul class="justify-content-around">
-        {{ range $position.responsibilities }}
+        {{ range .responsibilities }}
             <li>{{ . | markdownify }}</li>
         {{ end }}
       </ul>
     {{ end }}
-  {{ end }}
+
+    {{ if or .softwares .skills }}
+      {{ $softwares := .softwares }}
+      {{ $skills := .skills }}
+      {{ $skillCards := slice }}
+      <div class="col-12">
+        <h4>{{ i18n "technical-skills" }}</h4>
+        {{ range site.Data.en.sections.skills.skills }}
+          {{ $softs := slice }}
+          {{ $add := false }}
+          {{ range .softwares }}
+            {{ $soft := . }}
+            {{ range $softwares }}
+              {{ if eq $soft.name . }}
+                {{ $add = true }}
+                {{ $softs = $softs | append $soft }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+          {{ if $add }}
+            {{ $id = printf "%s-%s" .name $id }}
+            {{ $skill := dict "id" $id "name" .name "logo" .logo "softwares" $softs }}
+            {{ $skillCards = $skillCards | append $skill }}
+          {{ end }}
+        {{ end }}
+
+        <div class="row">
+            {{ range $skillCards }}
+              {{ partial "cards/position-skill.html" . }}
+            {{ end }}
+            {{ range $skills }}
+            <div class="col-xs-12 col-sm-6 col-lg-4 pt-2 ">
+              <div class="row card-position">
+                <div class="card-head d-flex">
+              {{ if .logo }}
+              {{ $logoImage := resources.Get .logo }}
+              {{/*  svg do not support "Fit" operation   */}}
+              {{ if ne $logoImage.MediaType.SubType "svg" }}
+                {{ $logoImage = $logoImage.Fit "24x24" }}
+              {{ end }}
+
+              <img
+                class="card-img-xs my-auto"
+                src="{{ $logoImage.RelPermalink }}"
+                alt="{{ .name }}"
+              />
+
+              <p class="card-title mx-2">{{ .name }}</p>
+            {{ else }}
+              <p class="card-title">{{ .name }}</p>
+            {{ end }}
+                </div>
+              </div>
+            </div>
+            {{ end }}
+        </div>
+      </div>
+    {{ end }}
   </div>
 </div>

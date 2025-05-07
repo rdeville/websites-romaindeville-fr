@@ -1,0 +1,16 @@
+{{ if . }}
+  {{ if eq .position "right" }}
+<div class="col-1 col-lg-2 text-center vertical-line vertical-line-right-adjustment d-inline-flex justify-content-center">
+  {{ else }}
+<div class="col-1 col-lg-2 text-center vertical-line d-inline-flex justify-content-center">
+  {{ end }}
+  {{ if .idx }}
+  <div class="circle fw-bold">{{ .idx }}</div>
+  {{ else }}
+  <div class="circle-empty fw-bold">X</div>
+  {{ end }}
+</div>
+{{ else }}
+<div class="col-1 col-lg-2">
+</div>
+{{ end }}

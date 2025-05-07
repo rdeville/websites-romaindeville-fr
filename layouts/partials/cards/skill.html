@@ -6,6 +6,11 @@
         <div class="col-12">
           <a onclick="toggleSkillDetail({{ .name | lower }})">
             <div class="row">
+              <div class="col-1">
+                <p id="skill-card-detail-{{ .name | lower }}">
+                  <span style="font-size:1.5em" class="fa-angle-right fas"></span>
+                </p>
+              </div>
               <div class="col-10 d-flex">
                 {{ if .logo }}
                   {{ $logoImage := resources.Get .logo }}
@@ -23,39 +28,38 @@
                   <h5 class="card-title">{{ .name }}</h5>
                 {{ end }}
               </div>
-              <div class="col-1">
-                <p id="skill-card-detail-{{ .name | lower }}">
-                  <span style="font-size:1.5em" class="fa-angle-right fas"></span>
-                </p>
-              </div>
             </div>
           </a>
           <div id="skill-card-body-{{ .name | lower }}" class="card-body text-justify  d-none">
             <p class="card-text">{{ .summary | markdownify }}</p>
 
-          </div>
-          {{ if .software }}
+        </div>
+        {{ if .softwares }}
           <div class="row justify-content-center align-items-center">
-            {{ range .software }}
+            {{ range .softwares }}
             <div class="col-6 px-1 my-1">
-              <div class="row justify-content-center bg-secondary mx-1">
-              <p class="card-text d-flex align-items-center">
-              {{ if .logo }}
-              {{ $logoImage := resources.Get .logo }}
-              <img
-                src="{{ $logoImage.RelPermalink }}"
-                alt="{{ .name }}"
-                style="max-height: 1.25rem;"
-              />&nbsp;
-              {{ end }}
-              {{ .name }}
-              </p>
+              <div class="container-text align-items-center d-flex bg-secondary mx-1 px-1">
+                {{ if .logo }}
+                {{ $logoImage := resources.Get .logo }}
+                <div class="col-2">
+                <img
+                  src="{{ $logoImage.RelPermalink }}"
+                  alt="{{ .name }}"
+                  style="max-height: 1.25rem;"
+                  />
+                </div>
+                <div class="col-10 mx-2">
+                  <p class="card-text">
+                  {{ .name }}
+                  </p>
+                </div>
+                {{ end }}
               </div>
             </div>
             {{ end }}
           </div>
-          {{ end }}
-        </div>
+        {{ end }}
       </div>
     </div>
+  </div>
 </div>
