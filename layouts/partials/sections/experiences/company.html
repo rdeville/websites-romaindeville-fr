@@ -1,0 +1,57 @@
+<div class="col-10 col-lg-8">
+  <div class="row">
+    <div class="col-12 col-md-7">
+      <!-- Company Information -->
+      {{ $logoImage:= resources.Get .company.logo}}
+      {{ $darkLogoImage:= resources.Get .company.darkLogo}}
+      {{ if $logoImage }}
+      <div class="logo-holder align-items-center">
+        <img class="company-logo light-logo" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" />
+        {{ if $darkLogoImage }}
+        <img class="company-logo dark-logo" src="{{ $darkLogoImage.RelPermalink }}" alt="{{ .name }}" />
+        {{ end }}
+      </div>
+      {{ end }}
+      <h3 class="company fw-bold">
+        {{ if .company.url }}
+        <a href={{.company.url}} title="{{ .company.name }}" target="_blank" rel="noopener">
+          {{ .company.name }}
+        </a>
+        {{ else }}
+          {{ .company.name }}
+        {{ end }}
+      </h3>
+    </div>
+
+    <!--
+      Total experience duration on a company is time between the starting date
+      of the oldest position and ending date of most recent position
+    -->
+    <div class="timeframe col-12 col-md-5 ">
+        {{ $oldestPosition := index (last 1 .positions) 0}}
+        {{ $mostRecentPosition := index (first 1 .positions) 0}}
+        <p class="text-muted text-end">
+          {{ $start := time.AsTime $oldestPosition.start }}
+          {{ $end := "" }}
+          {{ if $mostRecentPosition.end }}
+            {{ $end = time.AsTime $mostRecentPosition.end }}
+          {{ else }}
+            {{ $end := i18n "present" }}
+          {{ end }}
+          <span class="fa fa-calendar-alt"></span>
+          {{ time.Format "Jan 2006" $start }} - {{ time.Format "Jan 2006" $end }}
+          {{ if .company.duration }}
+          <br/>
+          {{ .company.duration }}
+          {{ end }}
+        </p>
+        <p class="text-muted text-end">
+          <i class="fa-solid fa-location-dot"></i> {{ .company.location }}
+        </p>
+    </div>
+    <div class="col-12">
+      <!-- Add company overview -->
+      <p>{{ .company.overview | markdownify }}</p>
+    </div>
+  </div>
+</div>

@@ -165,6 +165,54 @@
         }
       }
     },
+    "pdftk@3.3.3": {
+      "last_modified": "2025-05-25T15:24:27Z",
+      "resolved": "github:NixOS/nixpkgs/bdac72d387dca7f836f6ef1fe547755fb0e9df61#pdftk",
+      "source": "devbox-search",
+      "version": "3.3.3",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/glfnplp2yd0wr2wysrmrj24r7xqx4i9i-pdftk-3.3.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/glfnplp2yd0wr2wysrmrj24r7xqx4i9i-pdftk-3.3.3"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6wisz7hhaj3q3v3a82vwnlj826ndslpl-pdftk-3.3.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/6wisz7hhaj3q3v3a82vwnlj826ndslpl-pdftk-3.3.3"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4d2xksbpizdgpmawnzi2qmkhn3f8pdgz-pdftk-3.3.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4d2xksbpizdgpmawnzi2qmkhn3f8pdgz-pdftk-3.3.3"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/f1n00n2q6z54f7i10z4wv8dsvyw50m42-pdftk-3.3.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/f1n00n2q6z54f7i10z4wv8dsvyw50m42-pdftk-3.3.3"
+        }
+      }
+    },
     "pre-commit@3.7.1": {
       "last_modified": "2024-10-16T02:16:09Z",
       "resolved": "github:NixOS/nixpkgs/70cc7b62f2b448a487de36e1fd714693c59c4719#pre-commit",

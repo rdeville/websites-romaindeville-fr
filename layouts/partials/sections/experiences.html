@@ -1,0 +1,55 @@
+{{ $sectionID := replace (lower .section.name) " " "-"  }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+<div class="container anchor pb-5 experiences-section">
+  {{ if not (.section.hideTitle) }}
+    <h1 class="text-center">
+      <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ else }}
+    <h1 class="text-center" style="display: none">
+      <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ end }}
+
+  <div class="container timeline text-justify">
+    {{ $totalExperiences:= len .experiences }}
+    {{ $totalIdx := 1 }}
+    {{ $vlData := dict }}
+    {{ range $companyIdx,$experience:= .experiences }}
+      <div class="row align-items-center d-flex">
+      {{ if eq (mod $companyIdx 2) 0 }}
+        {{ $vlData = dict "position" "left"}}
+        {{ partial "sections/experiences/vertical-line.html" $vlData }}
+        {{ partial "sections/experiences/company.html" $experience }}
+        {{ partial "sections/experiences/vertical-line.html" }}
+      {{ else }}
+        {{ $vlData = dict "position" "right"}}
+        {{ partial "sections/experiences/vertical-line.html" }}
+        {{ partial "sections/experiences/company.html" $experience }}
+        {{ partial "sections/experiences/vertical-line.html" $vlData }}
+      {{ end }}
+
+      {{ $vlData = dict }}
+      {{ range $index,$position := $experience.positions }}
+        {{ if eq (mod $companyIdx 2) 0 }}
+          {{ $vlData = dict "position" "left" "idx" $totalIdx}}
+          {{ partial "sections/experiences/vertical-line.html" $vlData }}
+          {{ partial "sections/experiences/positions.html" $position }}
+          {{ partial "sections/experiences/vertical-line.html" }}
+        {{ else }}
+          {{ $vlData = dict "position" "right" "idx" $totalIdx}}
+          {{ partial "sections/experiences/vertical-line.html" }}
+          {{ partial "sections/experiences/positions.html" $position }}
+          {{ partial "sections/experiences/vertical-line.html" $vlData }}
+        {{ end }}
+        {{ $totalIdx = (add $totalIdx 1) }}
+      {{ end }}
+      </div>
+
+      {{ if lt $companyIdx (sub $totalExperiences 1) }}
+        {{ partial "sections/experiences/horizontal-line.html" $totalIdx }}
+      {{ end }}
+    {{ end }}
+    </div>
+</div>

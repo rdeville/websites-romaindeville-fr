@@ -39,6 +39,8 @@ maintainers:
 gitignore:
   templates:
     - base
+  query:
+    - hugo
 templates:
   - base
   - base-ci-gitlab

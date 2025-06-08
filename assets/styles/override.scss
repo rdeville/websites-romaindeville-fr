@@ -1,0 +1,18 @@
+@import "sections/override";
+
+strong {
+  color: get-light-color('highlight-color') !important;
+}
+
+.small-logo {
+  max-height: 1rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+
+html[data-theme="dark"] {
+  strong {
+    color: get-dark-color('highlight-color') !important;
+  }
+}
