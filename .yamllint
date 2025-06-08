@@ -1,0 +1,75 @@
+---
+extends: default
+
+ignore:
+  - node_modules/
+
+yaml-files:
+  - "*.yaml"
+  - "*.yml"
+  - .yamllint
+
+rules:
+  anchors:
+    forbid-undeclared-aliases: true
+    forbid-duplicated-anchors: true
+    forbid-unused-anchors: false
+  braces: disable
+  brackets: disable
+  colons:
+    max-spaces-before: 0
+    max-spaces-after: 1
+  commas: disable
+  comments:
+    require-starting-space: true
+    ignore-shebangs: true
+    min-spaces-from-content: 2
+    level: warning
+  comments-indentation:
+    level: warning
+  document-end: disable
+  document-start:
+    present: true
+    level: warning
+  empty-lines:
+    max: 2
+    max-start: 0
+    max-end: 0
+  empty-values:
+    forbid-in-block-mappings: true
+    forbid-in-flow-mappings: true
+    forbid-in-block-sequences: true
+  float-values:
+    forbid-inf: false
+    forbid-nan: false
+    forbid-scientific-notation: false
+    require-numeral-before-decimal: false
+  hyphens:
+    max-spaces-after: 1
+  indentation:
+    spaces: 2
+    indent-sequences: consistent
+    check-multi-line-strings: true
+  key-duplicates:
+    forbid-duplicated-merge-keys: false
+  key-ordering: disable
+  line-length:
+    max: 120
+    allow-non-breakable-words: true
+    allow-non-breakable-inline-mappings: false
+  new-line-at-end-of-file: enable
+  new-lines:
+    type: unix
+  octal-values: disable
+  quoted-strings:
+    quote-type: double
+    required: only-when-needed
+    extra-required: []
+    extra-allowed: []
+    allow-quoted-quotes: false
+    check-keys: true
+  trailing-spaces: enable
+  truthy:
+    level: warning
+
+# vim: ft=yaml
