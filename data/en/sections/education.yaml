@@ -2,7 +2,7 @@ section:
   name: Education
   id: education
   enable: true
-  weight: 5
+  weight: 6
   showOnNavbar: true
 
 degrees:
@@ -23,7 +23,7 @@ degrees:
     name: M.Sc. in Computer Science & Engineering
 - name: Higher Secondary School Certificate
   icon: fa-university
-  timeframe: 2010-2012
+  timeframe: 2008-2010
   institution:
     name: Classes Prépatoires Intégrées
   customSections:
@@ -33,8 +33,7 @@ degrees:
         English
 - name: Lycée Charles de Gaulle
   icon: fa-school
-  timeframe: 2005-2010
+  timeframe: 2005-2008
   institution:
     name: |-
-      Scientific High School Diploma
-      Mathematical Major
+      Scientific High School Diploma, Mathematical Major

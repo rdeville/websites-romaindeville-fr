@@ -107,17 +107,17 @@ projects:
       - *opentofu
       - *gitlab
 
-  - name: OpenTofu Cloudflare DNS
-    logo: /images/sections/projects/tofu-cloudflare.png
-    role: Maintainer
-    timeline: "2024 - Present"
-    repo: https://framagit.org/rdeville-public/opentofu/gitlab-repository
-    summary: |
-      Opentofu module to manage gitlab repository.
-    tags:
-      - *iac
-      - *opentofu
-      - *gitlab
+  # - name: OpenTofu Cloudflare DNS
+  #   logo: /images/sections/projects/tofu-cloudflare.png
+  #   role: Maintainer
+  #   timeline: "2024 - Present"
+  #   repo: https://framagit.org/rdeville-public/opentofu/gitlab-repository
+  #   summary: |
+  #     Opentofu module to manage gitlab repository.
+  #   tags:
+  #     - *iac
+  #     - *opentofu
+  #     - *gitlab
 
   - name: AwesomeWM
     logo: /images/sections/projects/dotfiles-awesomewm.png

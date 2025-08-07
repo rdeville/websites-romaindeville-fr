@@ -33,9 +33,11 @@ skills:
       use several different distributions (Ubuntu, Debian, Arch, Centos,
       Raspbian).
 
-
       Over time, I deepened my knowledge in system administration mainly
       around Linux distributions.
+
+      Currently, I'm migrating most of my personal infrastructure under NixOS,
+      an immutable OS based on the functional language Nix.
     categories:
       - *basic
     softwares:

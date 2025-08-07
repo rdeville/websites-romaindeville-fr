@@ -11,26 +11,47 @@ experiences:
   - company:
       name: Dougs
       logo: /images/sections/experiences/dougs.png
+      darkLogo: /images/sections/experiences/dougs-dark.png
       url: https://dougs.fr
       duration: 1 year & 5 months
       overview: |-
-        Skyloud is a company specialised in new technologies related to the
-        Cloud. It aims to help Startups and other companies to setup, optimise
-        and manage their infrastructure.
+        Dougs is an accounting firm that combines an accounting application with
+        consulting and support services.
+
+        It offers an accounting application that manages invoicing, expense
+        reports, and payroll management, while automating accounting entries and
+        tax obligations through an intuitive interface.
+
       location: Lyon, Rhône-Alpes, France
     positions:
-      - designation: Lead DevOps / SRE
+      - designation: Team Leader DevOps / SRE
         start: 2024-10-17
         end: 2025-06-13
         duration: 7 months
         overview: |-
           ##### Description {.subtitle}
 
-          TODO
+          As Lead DevOps/SRE within the Prod & System team, my primary
+          responsibilities were to manage the team's roadmaps in collaboration
+          with the manager, the architect, and the CISO.
+
+          In addition, I contributed to the development of the CIO department,
+          which consisted of IT, DPO, CISO, and Infrastructure departments.
 
           ### Responsibilities {.subtitle}
 
-          TODO
+          In addition to DevOps/SRE activities, my main responsibilities
+          included:
+
+          * **In charge of the supervision and administration** of
+            infrastructure, Kubernetes clusters, and access.
+          * **Planning team roadmaps** in collaboration with the CISO, the
+            architect, and the CIO.
+          * Monitoring Computer Security controls in an **ISO 27001 and
+            SecNumCloud** context.
+          * **Monitoring** information systems and, where necessary, **resolving
+          incidents**.
+          * **Recruiting, supporting, and training** team members.
 
         softwares: &dougs-soft
           - NodeJS
@@ -54,67 +75,52 @@ experiences:
           - Single Sign-On
           - OpenID Connect
 
-      - designation: Platform Engineer - DevOps
+      - designation: DevOps / SRE
         start: 2024-02-05
         end: 2024-10-17
         duration: 8 months
         overview: |-
           ##### Description {.subtitle}
 
-          Member of the Scale team, I participate in the automation and
-          optimization of the company's internal processes to facilitate client
-          application migrations in a Cloud environment for the Build and Run
-          teams. I am also called upon to work on occasionally within Build and
-          Run teams as reinforcement.
+          As a member of the Production & System team, I contributed to the
+          management of the infrastructure within the company, in particular
+          ensuring its proper functioning and scalability during increased
+          loads.
+
+          Additionally, during 2024, we have:
+
+          * **Migrate the Kubernetes deployment** from Kustomize to Helm
+          * **Import** the majority of infrastructure resources into Terraform
+          * Deploy a new application in an **ISO 27001 context and in a
+            SecNumCloud** environment.
 
           #### Responsibilities {.subtitle}
 
-          My main activities are:
+          My main activities were:
 
-            * **Identification** of tasks which can be automated,
-            * **Design and development** of solutions allowing the
-              implementation of the automation of tasks,
-            * **Documentation** of the automated procedure to be handled by
-              other teams.
+          * **Cloud infrastructure management** in an ISO 27001 and SecNumCloud
+            context,
+          * **Kubernetes cluster administration**,
+          * Information systems **monitoring and incident resolution**, if
+            necessary,
+          * **CI/CD** deployment creation and management
+          * **Technical support** for developers,
+          * Maintaining the **team's documentation** base,
+          * **Identifying** tasks that can be automated,
+          * **Designing and developing** solutions allowing the implementation
+            of task automation,
+          * **Documenting** automated procedures to be handled by other teams.
 
-          In parallel with these activities, I am also occasionally required to
-          support the other teams on the following tasks:
+          Alongside these activities, I trained my colleagues in the use of
+          Terraform and introduced DevX tools, such as
+          [Direnv](https://direnv.net) ou [Devbox](https://www.jetify.com/devbox).
 
-            * **Design and deployment** of Public Cloud infrastructure (AWS,
-              Scaleway, Azure) with IaC technologies (Infrastructure as Code),
-            * **Administration of Kubernetes clusters** and of application
-              deployment in these clusters,
-            * **Monitoring informations systems** with tools such as Prometheus,
-              Mimir, Loki, Grafana,
-            * Containerization of client application, implementation of **CI/CD
-              with GitOps tools**,
-            * **Documentation and training** of the automation tools,
-            * **Optimization** of application deployment and client infrastructure.
-
-        # One of my main achievements is the implementation of an automatic
-        # generation of customized documentation per client. It is based on the
-        # current state of their deployed Cloud infrastructure and their
-        # applications in a **Kubernetes** cluster. The goal is to help the
-        # client in handling his environment Cloud as well as providing
-        # up-to-date documentation to other teams for incident resolution.
-        pdf_desc: |-
-          \begin{itemize}
-            \item Public Cloud \textbf{infrastructure Design et deployment}
-              with IaC technologies (Infrastructure as Code),
-            \item \textbf{Kubernetes Clusters Administration} and application
-              deployment within clusters,
-            \item \textbf{Monitoring} Information Systems with tools such as
-              Prometheus, Mimir, Loki, Grafana,
-            \item Containerisation of client application, setup \textbf{CI/CD
-              with GitOps tools},
-            \item \textbf{Automatisation of internal process} to ease
-              migration of client applications in the cloud.
-          \end{itemize}
         softwares: *dougs-soft
 
   - company:
       name: Skyloud
-      logo: /images/sections/experiences/skyloud.png
+      logo: /images/sections/experiences/skyloud-light.png
+      darkLogo: /images/sections/experiences/skyloud.png
       url: https://skyloud.fr
       duration: 1 year
       overview: |-
@@ -166,19 +172,6 @@ experiences:
         # applications in a **Kubernetes** cluster. The goal is to help the
         # client in handling his environment Cloud as well as providing
         # up-to-date documentation to other teams for incident resolution.
-        pdf_desc: |-
-          \begin{itemize}
-            \item Public Cloud \textbf{infrastructure Design et deployment}
-              with IaC technologies (Infrastructure as Code),
-            \item \textbf{Kubernetes Clusters Administration} and application
-              deployment within clusters,
-            \item \textbf{Monitoring} Information Systems with tools such as
-              Prometheus, Mimir, Loki, Grafana,
-            \item Containerisation of client application, setup \textbf{CI/CD
-              with GitOps tools},
-            \item \textbf{Automatisation of internal process} to ease
-              migration of client applications in the cloud.
-          \end{itemize}
         softwares:
           - Docker
           - Kubernetes
@@ -226,12 +219,6 @@ experiences:
 
           </div>
         </div>
-      pdf_desc: |-
-        The "\textbf{L}aboratoire d’\textbf{I}nfo\textbf{R}matique en
-        \textbf{I}mage et \textbf{S}ystèmes d’information" (LIRIS) is a
-        joined research unit backed by the CNRS, INSA Lyon,
-        University Claude Bernard Lyon, University Lumière and Ecole Centrale
-        de Lyon.
       location: Villeurbanne, Rhône-Alpes, France
     positions:
       - designation: Platform Engineer
@@ -290,37 +277,15 @@ experiences:
 
           [pagoda]: https://projet.liris.cnrs.fr/pagoda
 
-        pdf_desc: |-
-          Design and implementation of an experimentation platform, dedicated
-          to research projects.
-
-          \begin{itemize}
-            \item Hardware and software \textbf{architecture design} of the
-              platform,
-            \item Setup tools to \textbf{automate platform management},
-            \item Evaluation of different monitoring systems and setup
-              prototype of the platform monitoring,
-            \item Write the \textbf{technical documentation}.
-          \end{itemize}
-
-          I also offered internal training about following topics:
-
-          \begin{itemize}
-            \item Setup of \textbf{Continuous Integration} (CI) tools.
-            \item Use of \textbf{Git} and data security (\textbf{gpg},
-              \textbf{KeepassXC}, storage encryption).
-          \end{itemize}
         softwares:
           - Ansible
           - Docker
           - Kubernetes
-          - OpenStack
+          - Openstack
           - MkDocs
           - Gitlab CI
           - Helm
-        skills:
-          - name: Python
-            logo: /images/sections/skills/python.png
+          - Python
 
       - designation: PhD Student
         start: 2014-03-01
@@ -353,17 +318,6 @@ experiences:
             * Reading and understanding of many research papers on the subject,
             * __Autonomous work__.
 
-        pdf_desc: |-
-          Realization of a \textbf{research project} associated to the
-          \textbf{ANR SoLSTiCE project} aiming to develop new models and tools to
-          represent 2D (images) and 2D+t (videos, cellular automata) data.
-
-          \begin{itemize}
-            \item \textbf{Development} of tools and algorithm to perform grid mining,
-            \item \textbf{Plan} and perform data experimentations,
-            %\item Reading and understanding of many research papers on the subject,
-            \item \textbf{Autonomous work}.
-          \end{itemize}
         skills:
           - name: C++
             logo: /images/sections/skills/cpp.png
@@ -386,10 +340,6 @@ experiences:
           __Development__ of modelization and visualization tools using __Web
           3D__ technologies to display a smart building with possibilities to
           send requests to sensors.
-        pdf_desc: |-
-          \textbf{Development} of modelization and visualization tools using
-          \textbf{Web 3D} technologies to display a smart building with
-          possibilities to send requests to sensors.
         skills:
           - name: HTML/CSS
             section: html-name
@@ -397,11 +347,3 @@ experiences:
           - name: Javascript
             section: javascript
             logo: /images/sections/skills/javascript.png
-#  - company:
-#      name: Emploi Estivaux et Intérimaire
-#      duration: "6 mois cumulés"
-#    positions:
-#      - responsibilities:
-#          - Manutention en fonderie de nuit (France).
-#          - Manutention en usine d'alimentation surgelé (France).
-#          - Récolte des feuilles de tabac (Suisse).
