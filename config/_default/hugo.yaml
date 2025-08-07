@@ -1,6 +1,6 @@
 ---
 baseURL: https://romaindeville.fr
-title: R. Deville resume, blog & portfolio
+title: R. Deville resume & blog
 
 module:
   imports:
@@ -22,13 +22,13 @@ languages:
   en:
     languageName: English
     languageCode: en
-    title: R. Deville's Resume, Blog and Portfolio
+    title: R. Deville's Resume and Blog
     weight: 1
   fr:
     languageName: Français
     languageCode: fr
-    title: CV, Blog et Portfolio de R. Deville
-    weight: 2
+    title: CV et Blog de R. Deville
+    weight: 1
 
 # Force a locale to be use, really useful to develop the application !
 # Should be commented in production, the "weight" should rocks.
@@ -79,7 +79,7 @@ params:
 
   # Configure the number of section title visible in the top navbar
   topNavbar:
-    maxVisibleSections: 10
+    maxVisibleSections: 6
 
   # Background image of the landing page
   background: /images/site/background.jpg
