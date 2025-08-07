@@ -1,0 +1,258 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+
+# filter buttons
+buttons:
+  - name: All
+    filter: all
+  - name: Programs
+    filter: &programs programs
+  - name: Dotfiles
+    filter: &dotfiles dotfiles
+  - name: IaC
+    filter: &iac iac
+  - name: Documents
+    filter: &documents documents
+  - name: Websites
+    filter: &websites websites
+
+# your projects
+projects:
+  - name: OpenTofu Github User
+    logo: /images/sections/projects/tofu-github.png
+    role: Maintainer
+    timeline: "2024 - Present"
+    repo: https://framagit.org/rdeville-public/opentofu/github-user
+    summary: |
+      Opentofu module to manage github user.
+    tags:
+      - *iac
+      - &opentofu opentofu
+      - &github github
+
+  - name: OpenTofu Github Team
+    logo: /images/sections/projects/tofu-github.png
+    role: Maintainer
+    timeline: "2024 - Present"
+    repo: https://framagit.org/rdeville-public/opentofu/github-team
+    summary: |
+      Opentofu module to manage github team.
+    tags:
+      - *iac
+      - *opentofu
+      - *github
+
+  - name: OpenTofu Github Organization
+    logo: /images/sections/projects/tofu-github.png
+    role: Maintainer
+    timeline: "2024 - Present"
+    repo: https://framagit.org/rdeville-public/opentofu/github-organization
+    summary: |
+      Opentofu module to manage github organization.
+    tags:
+      - *iac
+      - *opentofu
+      - *github
+
+  - name: OpenTofu Github Repository
+    logo: /images/sections/projects/tofu-github.png
+    role: Maintainer
+    timeline: "2024 - Present"
+    repo: https://framagit.org/rdeville-public/opentofu/github-repository
+    summary: |
+      Opentofu module to manage github repository.
+    tags:
+      - *iac
+      - *opentofu
+      - *github
+
+  - name: OpenTofu Gitlab User
+    logo: /images/sections/projects/tofu-gitlab.png
+    role: Maintainer
+    timeline: "2024 - Present"
+    repo: https://framagit.org/rdeville-public/opentofu/gitlab-user
+    summary: |
+      Opentofu module to manage gitlab user.
+    tags:
+      - *iac
+      - &opentofu opentofu
+      - &gitlab gitlab
+
+  - name: OpenTofu Gitlab Group
+    logo: /images/sections/projects/tofu-gitlab.png
+    role: Maintainer
+    timeline: "2024 - Present"
+    repo: https://framagit.org/rdeville-public/opentofu/gitlab-group
+    summary: |
+      Opentofu module to manage gitlab group.
+    tags:
+      - *iac
+      - *opentofu
+      - *gitlab
+
+  - name: OpenTofu Gitlab Repository
+    logo: /images/sections/projects/tofu-gitlab.png
+    role: Maintainer
+    timeline: "2024 - Present"
+    repo: https://framagit.org/rdeville-public/opentofu/gitlab-repository
+    summary: |
+      Opentofu module to manage gitlab repository.
+    tags:
+      - *iac
+      - *opentofu
+      - *gitlab
+
+  # - name: OpenTofu Cloudflare DNS
+  #   logo: /images/sections/projects/tofu-cloudflare.png
+  #   role: Maintainer
+  #   timeline: "2024 - Present"
+  #   repo: https://framagit.org/rdeville-public/opentofu/gitlab-repository
+  #   summary: |
+  #     Opentofu module to manage gitlab repository.
+  #   tags:
+  #     - *iac
+  #     - *opentofu
+  #     - *gitlab
+
+  - name: AwesomeWM
+    logo: /images/sections/projects/dotfiles-awesomewm.png
+    role: Maintainer
+    timeline: "2020 - Present"
+    repo: https://framagit.org/rdeville-public/dotfiles/awesomewm
+    summary: |
+      Configuration files for my AwesomeWM tiling window manager.
+    tags:
+      - *dotfiles
+      - &lua lua
+      - window manager
+      - tiling
+
+  - name: NeoVim
+    logo: /images/sections/projects/dotfiles-neovim.png
+    role: Maintainer
+    timeline: "2024 - Present"
+    repo: https://framagit.org/rdeville-public/dotfiles/neovim
+    summary: |
+      Configuration file for my neovim text editor to convert it into a
+      full-featured IDE.
+    tags:
+      - *dotfiles
+      - *lua
+      - neovim
+
+  - name: Direnv
+    logo: /images/sections/projects/dotfiles-direnv.png
+    role: Maintainer
+    timeline: "2024 - Present"
+    repo: https://framagit.org/rdeville-public/dotfiles/direnv
+    summary: |
+      Configuration files to ease my management of my directory environment.
+    tags:
+      - *dotfiles
+      - &bash bash
+      - direnv
+
+  - name: Tmux
+    logo: /images/sections/projects/dotfiles-tmux.png
+    role: Maintainer
+    timeline: "2022 - Present"
+    repo: https://framagit.org/rdeville-public/dotfiles/tmux
+    summary: |
+      Configuration files for my tmux.
+    tags:
+      - *dotfiles
+      - *bash
+      - tmux
+
+  - name: NixOS Config
+    logo: /images/sections/projects/dotfiles-nixos.png
+    role: Maintainer
+    timeline: "2024 - Present"
+    repo: https://framagit.org/rdeville-public/dotfiles/nixos-config
+    summary: |
+      My public NixOS configuration used to setup my computers.
+    tags:
+      - *dotfiles
+      - nix
+      - functional language
+
+  - name: Dotgit Sync
+    logo: /images/sections/projects/programs-dotgit-sync.png
+    role: Maintainer
+    timeline: "2024 - Present"
+    repo: https://framagit.org/rdeville-public/programs/dotgit-sync
+    summary: |
+      Tool to sync configurations between git repos.
+    tags:
+      - *programs
+      - &python python
+      - &jinja2 jinja2
+      - git
+
+  - name: Dotgit Sync Templates
+    logo: /images/sections/projects/programs-dotgit-sync-templates.png
+    role: Maintainer
+    timeline: "2024 - Present"
+    repo: https://framagit.org/rdeville-public/programs/dotgit-sync-templates
+    summary: |
+      Templates used combined with my program dotgit-sync.
+    tags:
+      - *programs
+      - *python
+      - *jinja2
+
+  - name: Dynamic Prompt
+    logo: /images/sections/projects/programs-dynamic-prompt.png
+    role: Maintainer
+    timeline: "2020 - Present"
+    repo: https://framagit.org/rdeville-public/programs/dynamic-prompt
+    summary: |
+      Set of scripts to render a dynamic prompt showing environment
+      information, support bash and zsh.
+    tags:
+      - *programs
+      - *bash
+      - zsh
+      - prompt
+
+  - name: Resume Builder
+    logo: /images/sections/projects/programs-resume-builder.png
+    role: Maintainer
+    timeline: "2020 - Present"
+    repo: https://framagit.org/rdeville-public/programs/resume-builder
+    summary: |
+      Program to render a website and a PDF resume from a YAML data file.
+    tags:
+      - *programs
+      - *websites
+      - *python
+      - &latex latex
+      - resume
+
+  - name: romaindeville.fr
+    logo: /images/sections/projects/websites-romaindeville-fr.png
+    role: Maintainer
+    timeline: "2020 - Present"
+    repo: https://framagit.org/rdeville-public/websites/romaindeville-fr
+    summary: |
+      Program to render a website and a PDF resume from a YAML data file.
+    tags:
+      - *websites
+      - *python
+      - resume
+
+  - name: 2022 ExpeNum
+    logo: /images/sections/projects/documents-2022-expenum.png
+    role: Maintainer
+    timeline: "2022"
+    repo: https://framagit.org/rdeville-public/documents/expenum-2020-02
+    summary: |
+      Slide used during ExpeNums at the MPT. Internet: machines, cats and humans.
+    tags:
+      - *documents
+      - *latex

@@ -1,0 +1,202 @@
+---
+section:
+  name: Volontariat
+  id: volunteer
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  template: sections/volunteer.html
+
+volunteer:
+  - organization:
+      name: LOV
+      url: https://labovilleurbanne.fr/site/
+      logo: /images/sections/volunteers/lov.png
+      start: "2018-06-01"
+      end: "2020-11-01"
+      duration: 2 year & 7 months
+      location: Villeurbanne, Rhône-Alpes, France
+      overview: |-
+        FabLab - Laboratoire Ouvert Villeurbannais
+      summary: |-
+          Le LOV est une association Villeurbannaise ayant pour but&nbsp;:
+
+
+            * d’offrir à ses membres __un espace de travail et des ressources
+              peu communes__ (imprimante 3D, découpeuse laser, outils imposants),
+            * de __favoriser la transmission__ des savoirs et des savoir-faire
+              scientifiques et technologiques et comment les exploiter,
+
+
+          <br/>
+          L’association a principes fondamentaux de&nbsp;:
+
+            * mettre l’accent sur la réalisation,
+            * pouvoir proposer __des ateliers de découverte et
+              d’approfondissement__,
+            * __privilégier les pratiques du libre__ pour les différentes
+              ressources et réalisations créées dans le cadre de projets.
+    positions:
+      - designation: Membre du CA
+        start: "2019-06-01"
+        end: "2020-06-01"
+        duration: 1 year
+        summary: |-
+            Mes principales responsabilités en tant que membres du CA
+            étaient&nbsp;:
+
+              * __Tenu de permanences__ hebdomadaires,
+              * __Entretien__ du local et du matériel,
+              * __Accueil et formation__ des nouveaux membres,
+              * __Organisation de réunion__ CA et rédaction des comptes-rendus.
+  - organization:
+      name: Illyse
+      url: https://www.illyse.net
+      logo: /images/sections/volunteers/illyse.png
+      location: Lyon, Rhône-Alpes, France
+      start: "2016-03-01"
+      end: "2020-11-01"
+      duration: 4 years & 8 months
+      overview: FAI Associatif à Lyon et Saint-Étienne
+      summary: |-
+          Illyse est une association loi 1901. Elle a pour objet de promouvoir
+          l’utilisation et le développement __d’un réseau neutre internet et
+          ouvert, respectueux de ses utilisateurs et de leur vie privée__.
+
+
+          Illyse est un __Fournisseur d’Accès à Internet sur la région lyonnaise
+          et stéphanoise__. En effet, le meilleur moyen de __promouvoir la
+          neutralité du Net__ est tout simplement de faire partie de ce réseau
+          et de participer à son fonctionnement.
+    positions:
+      - designation: Membre du CA
+        start: "2017-03-01"
+        end: "2020-11-01"
+        duration: 3 years & 8 months
+        summary: |-
+          Mes principales activités en tant que membres du CA étaient&nbsp;:
+
+            * __Tenu de permanences__ mensuelles,
+            * __Accueil__ de nouveaux membres,
+            * __Organisation de réunion__ CA et rédaction des comptes-rendus,
+            * __Préparation et tenue de conférences__ lors d’évènements comme
+              [Les Journées du Logiciel Libre
+              (JDLL)](https://epn.salledesrancy.com/journeelogiciellibre/)
+  - organization:
+      name: Salle des Rancy
+      url: https://www.salledesrancy.com/
+      logo: association/mpt.png
+      location: Lyon, Rhône-Alpes, France
+      start: "2016-06-01"
+      end: "2020-11-01"
+      duration: 4 years & 5 months
+      overview: |-
+        MJC, Maison Pour Tous - Salle des Rancy
+      summary: |-
+        La Maison Pour Tous (MPT) est l’une des 12 __Maison des Jeunes et de la
+        Culture (MJC)__ de Lyon.
+
+        Elle a pour but de permettre l’accès à la culture et aux loisirs du
+        plus grand nombre, de développer la citoyenneté et de favoriser
+        l’épanouissement des personnes.
+
+        Les activités de la MPT sont réparties en cinq secteurs&nbsp;:
+
+
+          * Enfance/jeunesse,
+          * Activités Socioculturelles
+          * Activités Sportives,
+          * Pratiques Numériques,
+          * Actions culturelles et citoyennes.
+
+    positions:
+      - designation: Bénévole
+        start: "2016-06-01"
+        end: "2020-11-01"
+        duration: 4 years & 5 months
+        summary: |-
+          Mon activité de Bénévole au sein de la MPT était presque uniquement
+          au sein du pôle de [l’Espace Public
+          Numérique](https://epn.salledesrancy.com). <br>
+
+
+          Mes activités au sein de l’EPN étaient&nbsp;:
+
+
+          * Réalisation d’__activités numériques__ pour les membres de la MPT
+            telles que l'installation d’un centre de média ou d’un centre de
+            console rétro sur un Raspberry Pi, initiation à la domotique.
+          * __Support de l’EPN pour l’administration système__&nbsp;:
+              * Maintenance des salles informatiques (~40 PCs),
+              * Mise en place d’outils d’automatisation de la maintenance,
+              * Documentation des outils d'automatisation,
+              * Formation des membres de l’EPN,
+              * Installation des nouveaux PC et serveurs,
+          * __Organisateur bénévole__ pour les évènements numériques organisés
+            par l’EPN&nbsp;:
+              * [Les Expériences
+                Numériques](https://epn.salledesrancy.com/experiences-numeriques/)
+              * [Les Journées du Logiciel Libre
+                (JDLL)](https://epn.salledesrancy.com/journeelogiciellibre/)
+  - organization:
+      name: Graines d’Images
+      url: https://www.grainesdimages.fr/
+      logo: association/grainesdimages.png
+      overview: Association de photographie de l’INSA de Lyon
+      location: Villeurbanne, Rhône-Alpes, France
+      start: "2009-06-01"
+      end: "2018-06-01"
+      duration: 9 years
+      summary: |-
+          Graines d’Images est __une des plus vieilles association de l’INSA__.
+          Elle est présente lors de chaque spectacle, concert et évènements afin
+          de fournir des souvenirs impérissables aux étudiants présents.
+
+          L’association propose à ses membres&nbsp;:
+
+
+          * __Du prêt de matériel, un Studio et un laboratoire photo
+            argentique__,
+          * __Des couvertures d’évènements divers__, principalement des
+            concerts, pièces de théâtre, compétitions sportives, en lien
+            avec les associations du campus de la Doua.
+          * __Des formations__, aussi bien pour les débutants que pour les
+            confirmés concernant la prise de vue, le traitement d’images,
+          * __Des ateliers et des sorties photo__ pour mettre en pratique les
+            connaissances acquises lors des formations.
+
+    positions:
+      - designation: Vice-Président
+        start: "2010-06-01"
+        end: "2011-06-01"
+        duration: 1 year
+        summary: |-
+          Mes responsabilités en tant que Vice-Président étaient&nbsp;:
+
+
+            * __Tenu des permanences__ quasi quotidiennes,
+            * __Gestion de la vie quotidienne__ de l’association&nbsp:
+              * Gestion des stocks et prêt de matériel,
+              * Communication avec les autres associations du campus,
+              * Organisation des couvertures (recrutement des photographes,
+              tenu des délais pour le rendu photo, livraison…),
+              * Accueil des nouveaux membres,
+            * __Organisation de réunion__ avec le Bureau,
+            * __Entretien du local__,
+      - designation: Trésorier
+        start: "2012-06-01"
+        end: "2013-06-01"
+        duration: 1 year
+        summary: |-
+          Mes responsabilités en tant que Trésorier étaient&nbsp;:
+
+
+            * __Tenu des permanences__ quasi quotidiennes,
+            * __Gestion de la trésorerie__, vente et achat de matériel, note
+              de frais, cotisation,
+            * __Gestion d’une partie de la vie quotidienne__ de
+              l’association&nbsp;:
+              * Gestion des stocks et prêt de matériel,
+              * Accueil des nouveaux membres,
+            * __Organisation de réunion__ avec le Bureau,
+            * __Entretien du local__,

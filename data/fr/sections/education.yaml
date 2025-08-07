@@ -1,0 +1,39 @@
+section:
+  name: Education
+  id: education
+  enable: true
+  weight: 6
+  showOnNavbar: true
+
+degrees:
+- name: &insa Institut National des Sciences Appliquées de Lyon (INSA)
+  icon: fa-microscope
+  timeframe: 2014-2018
+  institution:
+    name: Doctorat es Informatique
+  customSections:
+    - name: Thèse
+      content: |-
+        Fouille de grille spatio-temporel appliquée à la classification d'image
+        et l'analyse d'automate célullaire.
+- name: *insa
+  icon: fa-graduation-cap
+  timeframe: 2010-2014
+  institution:
+    name: Ingénieur en Informatique
+- name: *insa
+  institution:
+    name: Classes Prépatoires Intégrées
+  icon: fa-university
+  timeframe: 2008-2019
+  customSections:
+    - name: Details
+      content: |-
+        2nd année en section international en Anglais (SCAN) avec tous les cours
+        scientifique dispensé en anglais.
+- name: Lycée Charles de Gaulle
+  icon: fa-school
+  timeframe: 2005-2008
+  institution:
+    name: |-
+      Baccalauréat Scientifique, Spécialité Mathématique

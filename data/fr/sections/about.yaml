@@ -1,0 +1,87 @@
+section:
+  name: A propos
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+
+designation: DevOps / SRE
+# company:
+#   name: Dougs Compta
+#   url: "https://www.dougs.fr"
+
+summary: |-
+  Passionné, je me suis spécialisé dans l'administration, l'automatisation et
+  l'Observabilité de plateforme.
+
+  J'apprecie de travailler avec des outils relatif à l'IaC et l'automaitisation
+  au travers d'une approche GitOps, permettant la tracabilité de l'évolution des
+  déploiement ainsi que le passage à l'échelle ou encore leur reconciliation
+  si des dérives apparaissent.
+
+    Je suis aussi très attaché à mes investissements associatifs, à la sécurité
+  et à la protection des données privées.
+
+socialLinks:
+  - name: Email
+    icon: "fas fa-envelope"
+    url: "pro@romaindeville.fr"
+  - name: Github
+    icon: "fab fa-github"
+    url: "https://www.github.com/rdeville"
+  - name: Framagit
+    icon: "fab fa-gitlab"
+    url: "https://framagit.org/rdeville"
+  - name: Gitlab
+    icon: "fab fa-gitlab"
+    url: "https://gitlab.com/r.deville"
+  - name: LinkedIn
+    icon: "fab fa-linkedin"
+    url: "https://linkedin.com/in/romaindeville"
+
+# You can put custom buttons to link your relevant resources.
+# For example, you can put link for your resume.
+resourceLinks:
+  - title: "FR-Color"
+    url: files/resume/fr_FR/rdeville-devops-cloud-fr.pdf
+    logo: "/images/flags/fr.png"
+  - title: "FR-Black & White"
+    url: files/resume/fr_FR/rdeville-devops-cloud-fr-bw.pdf
+    logo: "/images/flags/fr.png"
+  - title: "FR-ATS Ready"
+    url: files/resume/fr_FR/rdeville-devops-cloud-ats-fr.pdf
+    logo: "/images/flags/fr.png"
+  - title: "EN-Color"
+    url: files/resume/en_US/rdeville-devops-cloud-en.pdf
+    logo: "/images/flags/us.png"
+  - title: "EN-Black & White"
+    url: files/resume/en_US/rdeville-devops-cloud-en-bw.pdf
+    logo: "/images/flags/us.png"
+  - title: "EN-ATS Ready"
+    url: files/resume/en_US/rdeville-devops-cloud-ats-en.pdf
+    logo: "/images/flags/us.png"
+
+# Show your badges
+# You can show your verifiable certificates from https://www.credly.com.
+# You can also show a circular bar indicating the level of expertise on a certain skill
+badges:
+  - type: soft-skill-indicator
+    name: Travail en équipe
+    percentage: 85
+    color: "#4CAF50"
+  - type: soft-skill-indicator
+    name: Pedagogie
+    percentage: 85
+    color: "#FFEB3B"
+  - type: soft-skill-indicator
+    name: Documentation
+    percentage: 85
+    color: "#2196F3"
+  - type: soft-skill-indicator
+    name: Curiosité
+    percentage: 85
+    color: "#00BCD4"
+  - type: soft-skill-indicator
+    name: Autonomie
+    percentage: 85
+    color: "#9C27B0"
