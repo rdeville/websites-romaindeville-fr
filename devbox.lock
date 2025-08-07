@@ -277,6 +277,70 @@
         }
       }
     },
+    "yamllint@1.37.1": {
+      "last_modified": "2025-05-16T20:19:48Z",
+      "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#yamllint",
+      "source": "devbox-search",
+      "version": "1.37.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/zpx2h1p689s0sq15pnm8hrwb1r8qiq2g-python3.12-yamllint-1.37.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/cabqrzcssd4jz420wqnkf2ail19dhbd5-python3.12-yamllint-1.37.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/zpx2h1p689s0sq15pnm8hrwb1r8qiq2g-python3.12-yamllint-1.37.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/61rk661yf0an0kfpbmng1baqzdlpvxim-python3.12-yamllint-1.37.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/7pr088lzbsq3n0pwnx5mz906asffwm09-python3.12-yamllint-1.37.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/61rk661yf0an0kfpbmng1baqzdlpvxim-python3.12-yamllint-1.37.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/x8hq6b2bxxw6iq3nisvz4vq3x8rg8nw6-python3.12-yamllint-1.37.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/87msznav6i4car58rjbpxz99p5q7zxas-python3.12-yamllint-1.37.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/x8hq6b2bxxw6iq3nisvz4vq3x8rg8nw6-python3.12-yamllint-1.37.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/r46xh5mckk2m9maai0bc2dx63jj84w5l-python3.12-yamllint-1.37.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/armnb0mkgb4bi4bx01xhhzv5xlra8gh5-python3.12-yamllint-1.37.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/r46xh5mckk2m9maai0bc2dx63jj84w5l-python3.12-yamllint-1.37.1"
+        }
+      }
+    },
     "yq-go@4.44.1": {
       "last_modified": "2024-06-12T20:55:33Z",
       "resolved": "github:NixOS/nixpkgs/a9858885e197f984d92d7fe64e9fff6b2e488d40#yq-go",
