@@ -1,0 +1,369 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  filter: true
+
+# filter buttons
+buttons:
+  - name: All
+    filter: all
+  - name: OS & Basics
+    filter: &basic basic
+  - name: Langage
+    filter: &language language
+  - name: Cloud
+    filter: &cloud cloud
+  - name: Outils SRE
+    filter: &sre sre
+  - name: Autres
+    filter: &others others
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+  - name: Linux
+    logo: /images/sections/skills/linux.png
+    pdf_desc: Ubuntu, Debian, Arch, Centos,...
+    summary: |-
+      Système d'exploitation que j'utilise la très grande majorité du temps.
+      J'utilise généralement différente distributions (Ubuntu, Debian, Arch, NixOS, ...)
+
+      Avec le temps, j'ai approfondi mes connaissances en administration système
+      principalement pour des distributions Linux.
+
+      Actuellement, je suis en migration de la majorité de mon infrastructure
+      personnelle vers NixOS, un OS immutable basé sur le langage fonctionel Nix.
+    categories:
+      - *basic
+    softwares:
+      - name: NixOS
+        logo: /images/sections/skills/nixos.png
+      - name: Arch
+        logo: /images/sections/skills/archlinux.png
+      - name: Debian
+        logo: /images/sections/skills/debian.png
+      - name: Ubuntu
+        logo: /images/sections/skills/ubuntu.png
+
+  - name: Windows
+    logo: /images/sections/skills/windows.png
+    summary: |-
+      Second système d'exploitation que j'utilise.
+
+      J'ai acquis quelques connaissances en administration de windows durant mon
+      volontariat, principalement au sein de la [MPT](https://www.sallesdesrancy.com).
+
+      D'un autre coté, je n'utilise pas ce système d'exploitation pour le
+      développement.
+    categories:
+      - *basic
+
+  - name: MacOS
+    logo: /images/sections/skills/apple.png
+    summary: |-
+      Système d'exploitation avec lequel j'ai commencé le développement mais que
+      je n'utilise plus en dehors du cadre professionnel s'il s'agit de l'OS
+      fourni.
+
+
+      Je maintiens malgré tout de bonne connaissances concernant le système
+      d'exploitation MacOS au travers de ma veille technologique. Cela est
+      principalement du au fait que je travaille avec des collègues sous MacOS.
+      et qu'il s'agit du système d'exploitation qui m'est
+    categories:
+      - *basic
+
+  - name: Kubernetes
+    logo: /images/sections/skills/kubernetes.png
+    summary: |
+      As Kubernetes Administrator, I developed an strong competences in deploying,
+      managing, and maintaining Kubernetes clusters in production environments.
+
+      I'm proficient in container orchestration, infrastructure automation, and
+      CI/CD integration to ensure high availability, scalability, and performance
+      of applications.
+    categories:
+      - *cloud
+    softwares:
+      - name: Helm
+        logo: /images/sections/skills/helm.png
+      - name: Kustomize
+        logo: /images/sections/skills/kustomize.png
+
+  - name: Cloud Computing
+    logo: /images/sections/skills/cloud.png
+    categories:
+      - *cloud
+    summary: |
+      I'm use to design, deploy, and manage cloud infrastructure on different
+      cloud providers such as OpenStack, AWS, GCP or Scaleway.
+
+      Adept of the in Infrastructure as Codel tools (such as OpenTofu,
+      Terraform), I can ensure deployment of scalable, high-availability
+      environments with cloud security best practices and cost optimization.
+    softwares:
+      - name: Openstack
+        logo: /images/sections/skills/openstack.png
+      - name: GCP
+        logo: /images/sections/skills/gcp.png
+      - name: AWS
+        logo: /images/sections/skills/aws.png
+      - name: Scaleway
+        logo: /images/sections/skills/scaleway.png
+      - name: Outscale
+        logo: /images/sections/skills/outscale.png
+
+  - name: Containers
+    logo: /images/sections/skills/oci.jpg
+    summary: |
+      Write most of the programs as OCI container to be run for Container
+      Runtime Interface such as Docker or ContainerD.
+
+      Experienced with multi-stage, multi-arch build process and optimization of
+      image to reduce size and manage cost efficiently.
+    categories:
+      - *cloud
+    softwares:
+      - name: Docker
+        logo: /images/sections/skills/docker.png
+      - name: ContainerD
+        logo: /images/sections/skills/containerd.png
+
+  - name: Git
+    logo: /images/sections/skills/git.png
+    summary: |
+      Experienced with git-based development.
+
+      Use mainly Gitlab and Github with their collaborations tools such as
+      issues, pull requests or merge requests, CI services, etc.
+
+      Also experienced in administration of github organization and gitlab
+      instance administration.
+    categories:
+      - *basic
+    softwares:
+      - name: Gitlab
+        logo: /images/sections/skills/gitlab.png
+      - name: Github
+        logo: /images/sections/skills/github.png
+
+  - name: Shell Scripting
+    logo: /images/sections/skills/bash.png
+    summary: |-
+      Development of advanced scripts to:
+
+      * Automate almost everything I do in my terminals
+      * Install software and configuration
+      * Develop programs when no other languages are allowed.
+    categories:
+      - *basic
+      - *language
+    softwares:
+      - name: Bash
+        logo: /images/sections/skills/bash.png
+      - name: Zsh
+        logo: /images/sections/skills/zsh.png
+
+  - name: Python
+    logo: /images/sections/skills/python.png
+    summary: |-
+      One of my favorite programming languages.
+
+      Used to develop scripts and programs capable of scaling, testable,
+      maintenable and documented.
+
+      I'm also able to package code into applications for multiple OS.
+    categories:
+      - *language
+    softwares:
+      - name: Python
+        logo: /images/sections/skills/python.png
+      - name: Poetry
+        logo: /images/sections/skills/poetry.png
+
+  - name: Javascript
+    logo: /images/sections/skills/javascript.png
+    summary: |-
+      Good knowledge in Javascript mainly to develop scripts used to
+      augment usage of documentation tools such as
+      [Docusaurus](https://docusaurus.io/) or to automate release of git
+      repository.
+
+      I'm also able to develop micro-service for a cloud oriented applications.
+    categories:
+      - *language
+    softwares:
+      - name: NodeJS
+        logo: /images/sections/skills/nodejs.png
+      - name: NPM
+        logo: /images/sections/skills/npm.png
+      - name: NestJS
+        logo: /images/sections/skills/nestjs.png
+
+  - name: HTML-CSS
+    logo: /images/sections/skills/html_css.png
+    summary: |-
+      Basic knowledge in HTML/CSS, enough to customize a static site
+      rendering, e.g. for documentation or for this website/resume you are
+      currently viewing.
+    categories:
+      - *language
+    softwares:
+      - name: HTML5
+        logo: /images/sections/skills/html5.png
+      - name: CSS3
+        logo: /images/sections/skills/css3.png
+
+  - name: LaTeX
+    logo: /images/sections/skills/latex.png
+    summary: |-
+      Main language used to write documents which will be printed or
+      shared in PDF format.
+
+      Use of custom latex class documents, for instance to render my
+      resume in PDF.
+    categories:
+      - *basic
+
+  - name: C++
+    logo: /images/sections/skills/cpp.png
+    summary: |-
+      Good knowledge in C/C++ development, mainly used during my PhD for
+      the development of mining algorithms.
+
+  - name: CI-CD
+    logo: /images/sections/skills/ci-cd.png
+    summary: |-
+      Use of continuous integration and continuous deployment tools to:
+
+        * Ensure validity of test suite before deployment,
+        * Automate infrastructures deployment and provisionning in the cloud,
+        * Automate deployment of online documentation.
+    categories:
+      - *sre
+    softwares:
+      - name: ArgoCD
+        logo: /images/sections/skills/argocd.png
+      - name: Gitlab CI
+        logo: /images/sections/skills/gitlab.png
+      - name: Github Workflow
+        logo: /images/sections/skills/github.png
+
+  - name: Monitoring
+    logo: /images/sections/skills/monitoring.png
+    summary: |-
+      I am able to deploy and configure monitoring tools to ensure observability,
+      stability, tracability and alerting for services.
+
+      Monitoring tools I know range from the export and virtualization of
+      metrics (Grafana, Prometheus,...) to the export, aggregation,
+      sorting and visualization of log (rsyslog, Loki...)
+    categories:
+      - *sre
+    softwares:
+      - name: Loki
+        logo: /images/sections/skills/loki.png
+      - name: Grafana
+        logo: /images/sections/skills/grafana.png
+      - name: Mimir
+        logo: /images/sections/skills/mimir.png
+      - name: Prometheus
+        logo: /images/sections/skills/prometheus.png
+      - name: Datadog
+        logo: /images/sections/skills/datadog.png
+
+  - name: Infrastructure as Code
+    logo: /images/sections/skills/iac.png
+    summary: |-
+      Adept of GitOps methodology, I developped strong knowledge about
+      Infrastructure as Code to deploy resources such as Cloud Infrastructure
+      but also Github or Gitlab repository and teams, etc.
+
+      Over the time, I used multiple different IaC tools such as OpenTofu,
+      Terraform for resources deployment, Ansible for provisionning or NixOS to
+      deploy Linux OS.
+
+      Use of such tools allow to ensure stability, scalability and automated
+      management of deployed resources.
+    categories:
+      - *sre
+      - *cloud
+    softwares:
+      - name: OpenTofu
+        logo: /images/sections/skills/opentofu.png
+      - name: Terraform
+        logo: /images/sections/skills/terraform.png
+      - name: Terragrunt
+        logo: /images/sections/skills/terragrunt.png
+      - name: Ansible
+        logo: /images/sections/skills/ansible.png
+      - name: NixOS
+        logo: /images/sections/skills/nixos.png
+      - name: Packer
+        logo: /images/sections/skills/packer.png
+
+  - name: Database Management
+    logo: /images/sections/skills/db.png
+    summary: |-
+      Over the time, I developped knowledge about Database management, such as
+      deployement of High availability DB instances and permission management.
+
+      I'm able to deploy and manage DB as Saas or self-hosted in kubernetes
+      environnements.
+
+    categories:
+      - *sre
+      - *cloud
+    softwares:
+      - name: Redis
+        logo: /images/sections/skills/redis.png
+      - name: MongoDB
+        logo: /images/sections/skills/mongodb.png
+      - name: Postgres SQL
+        logo: /images/sections/skills/postgresql.png
+
+
+  - name: Identity Access Management
+    logo: /images/sections/skills/iam.png
+    summary: |-
+      I'm able to setup secured Identity Access Management ensuring Zero Trust
+      and Least Privileged policy for either users or services accounts.
+
+      This can be achieved using multiple self-hosted solution such as AuthentiK
+      or SaaS solution such as Cloud Provider IAM services.
+    categories:
+      - *sre
+      - *cloud
+    softwares:
+      - name: AuthentiK
+        logo: /images/sections/skills/authentik.png
+      - name: Keycloak
+        logo: /images/sections/skills/keycloak.png
+      - name: OpenID Connect
+        logo: /images/sections/skills/oidc.png
+      - name: Single Sign-On
+        logo: /images/sections/skills/sso.png
+
+  - name: Knowledge Management
+    logo: /images/sections/skills/knowledge-management.png
+    summary: |-
+      Adept of documentation writing, there is no such this like a well written
+      `README`.
+
+      I'm prone to maintain documentation to ensure knwoledge transmission as
+      much as I can using different tools depending on the needs.
+    softwares:
+      - name: Docusaurus
+        logo: /images/sections/skills/docusaurus.png
+      - name: Hugo
+        logo: /images/sections/skills/hugo.png
+      - name: Notion
+        logo: /images/sections/skills/notion.png
+      - name: MkDocs
+        logo: /images/sections/skills/mkdocs.png
+    categories:
+      - *others

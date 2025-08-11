@@ -1,0 +1,22 @@
+# section information
+section:
+  name: Interests
+  id: interests
+  enable: true
+  weight: 8
+  showOnNavbar: true
+  template: sections/interests.html
+
+interests:
+  - name: Photography
+    desc: Practice of film, digital and polaroid photography.
+    logo: /images/sections/interests/photography.png
+  - name: Bicycle
+    desc: Bike customization and main means of transport.
+    logo: /images/sections/interests/bicycle.png
+  - name: Self-Hosting
+    desc: Self-hosting my own emails and online storage since 2016.
+    logo: /images/sections/interests/selfhosting.png
+  - name: DIY
+    desc: Fabrication, CAD, 3D printing, laser cutting,...
+    logo: /images/sections/interests/diy.png

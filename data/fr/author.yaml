@@ -1,0 +1,16 @@
+name: "Romain Deville"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+image: "images/author/author.png"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: pro@romaindeville.fr
+  phone: +33.6.16.90.61.65
+  website: https://romaindeville.fr
+  github: rdeville
+  linkedin: romain.deville
+
+summary:
+  - Connaissez-vous le Konami Code ?
+  - Je vie dans mon terminal et ceux mes serveurs.
+  - J’apprecie de travailler avec des projets Open-Source.
+  - J’aime les challenges techniques et l'automatisation.

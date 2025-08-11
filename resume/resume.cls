@@ -31,10 +31,10 @@
 \RequirePackage{xstring}
 % Configure hyperref colors
 \hypersetup{
-	colorlinks=true,
-	linkcolor=blue-800,
-	filecolor=magenta,
-	urlcolor=blue-800,
+  colorlinks=true,
+  linkcolor=blue-800,
+  filecolor=magenta,
+  urlcolor=blue-800,
 }
 
 % DEFINE GEOMETRY
@@ -58,10 +58,10 @@
 \setlength\marginbottom{\margintop}
 
 \geometry{
-	left=\marginleft,
-	right=\marginright,
-	top=\margintop,
-	bottom=\marginbottom
+  left=\marginleft,
+  right=\marginright,
+  top=\margintop,
+  bottom=\marginbottom
 }
 
 % Minipage has an annoying af indent that must be removed
@@ -354,7 +354,7 @@
 
 % Convenience functions to use fontawesome5 icons
 \renewcommand{\fa}[1]{
-	\faIcon[solid]{#1}
+  \faIcon[solid]{#1}
 }
 
 % HEADER
@@ -367,91 +367,91 @@
 
 % Assemble the header
 \newcommand{\makeheader}{%
-	% Header bar is a minipage
-	\colorbox{header-bg}{
-		\parbox[t][\dimexpr \headerheight][c]{\linewidth}{%
-			\color{header-fg}\bfseries
-			\parbox[c][\headerheight][c]{\sidebarwidth}{%
-				\ifdef{\@photo}{%
-					\begin{center}
-						\includegraphics[width=\@photodiameter]{\@photo}%
-					\end{center}
-				}{}
-			}
-			\parbox[c][\headerheight][c]{\dimexpr \linewidth-1.1\sidebarwidth-1em}{%
-				\centering
-				\vfill
-				{\Huge\MakeUppercase{\@name}\par}
-				\vfill
-				{\Large\@position\par}
-				\vfill
-				{\small\@tagline\par}
-				\vfill
-			}
-		}
-	}
+  % Header bar is a minipage
+  \colorbox{header-bg}{
+    \parbox[t][\dimexpr \headerheight][c]{\linewidth}{%
+      \color{header-fg}\bfseries
+      \parbox[c][\headerheight][c]{\sidebarwidth}{%
+        \ifdef{\@photo}{%
+          \begin{center}
+            \includegraphics[width=\@photodiameter]{site/\@photo}%
+          \end{center}
+        }{}
+      }
+      \parbox[c][\headerheight][c]{\dimexpr \linewidth-1.1\sidebarwidth-1em}{%
+        \centering
+        \vfill
+        {\Huge\MakeUppercase{\@name}\par}
+        \vfill
+        {\Large\@position\par}
+        \vfill
+        {\small\@tagline\par}
+        \vfill
+      }
+    }
+  }
 }
 
 % Sidebar
 % ------------------------------------------------------------------------------
 \newcommand{\sidebar}[1]{%
-	\def\insidebar{true}
-	\colorbox{sidebar-bg}{
-		\hspace{1em}%
-		\parbox[t][][l]{\sidebarwidth}{%
-			#1%
-		}%
-	}%
+  \def\insidebar{true}
+  \colorbox{sidebar-bg}{
+    \hspace{1em}%
+    \parbox[t][][l]{\sidebarwidth}{%
+      #1%
+    }%
+  }%
 }
 
 % Main bar
 % ------------------------------------------------------------------------------
 \newcommand{\mainbar}[1]{%
-	\def\insidebar{false}
-	\hspace{1em}
-	\parbox[t]{\dimexpr \textwidth-1.1\sidebarwidth-3em}{%
-		#1%
-	}
+  \def\insidebar{false}
+  \hspace{1em}
+  \parbox[t]{\dimexpr \textwidth-1.1\sidebarwidth-3em}{%
+    #1%
+  }
 }
 
 % Sections, subsections, and more
 % ------------------------------------------------------------------------------
 % Redefine section in caps, bold and with rule below
 \renewcommand{\section}[2][]{%
-	\parbox[t]{\linewidth}{
-		\vspace{0.5em}
-		\ifstrequal{#1}{}{}{
-			\color{section-title}
-			{\large \makebox[5mm][c]{#1}\hspace{0.5em}}}
-		{\large\bfseries\MakeUppercase{#2}}\\[-0.75em]
-		\rule{\linewidth}{1.0pt}\par
-		\medskip
-	}%
+  \parbox[t]{\linewidth}{
+    \vspace{0.5em}
+    \ifstrequal{#1}{}{}{
+      \color{section-title}
+      {\large \makebox[5mm][c]{#1}\hspace{0.5em}}}
+    {\large\bfseries\MakeUppercase{#2}}\\[-0.75em]
+    \rule{\linewidth}{1.0pt}\par
+    \medskip
+  }%
 }
 
 \renewcommand{\subsection}[2][]{%
-	\parbox[t]{\linewidth}{
-		\vspace{0.5em}
-		\ifstrequal{#1}{}{}{\color{section-title}\makebox[5mm][c]{#1}\hspace{0.5em}}
-		{\color{section-title}\bfseries#2}\\[-0.75em]%
-		\medskip
-	}%
+  \parbox[t]{\linewidth}{
+    \vspace{0.5em}
+    \ifstrequal{#1}{}{}{\color{section-title}\makebox[5mm][c]{#1}\hspace{0.5em}}
+    {\color{section-title}\bfseries#2}\\[-0.75em]%
+    \medskip
+  }%
 }
 
 % Contact Info
 % ------------------------------------------------------------------------------
 \newcommand{\infofield}[2]{%
-	\parbox[t][][t]{\sidebarinnerwidth}{%
-		\small%
-		\parbox[t][1em][c]{1em}{
-			\centering
-			\color{contact-icon}{#1}%
-		}
-		\parbox[t][1em][c]{\dimexpr \linewidth-2em}{
-			\hspace{0.25em}#2
-		}
-		\vspace{.5em}
-	}
+  \parbox[t][][t]{\sidebarinnerwidth}{%
+    \small%
+    \parbox[t][1em][c]{1em}{
+      \centering
+      \color{contact-icon}{#1}%
+    }
+    \parbox[t][1em][c]{\dimexpr \linewidth-2em}{
+      \hspace{0.25em}#2
+    }
+    \vspace{.5em}
+  }
 }
 
 \newcommand{\email}[1]{\infofield{\fa{envelope}}{\href{mailto:#1}{#1}}}
@@ -463,318 +463,324 @@
 % Format job list
 % ------------------------------------------------------------------------------
 \newcommand{\jobcompany}[6]{%
-	% #1: Name
-	% #2: URL
-	% #3: Location
-	% #4: Start-End Date
-	% #5: Total Duration
-	% #6: Description
-	\parbox[t][][c]{\dimexpr \linewidth-1em}{
-		\parbox[t][][c]{0.65\linewidth}{%
-			\color{job-company}%
-			\vspace{.25em}
-			\large
-			\ifthenelse{\equal{#2}{}}{%
-				\fa{building} \textbf{#1}%
-			}{%
-				\href{#2}{\fa{building} \textbf{#1}}%
-			}
+  % #1: Name
+  % #2: URL
+  % #3: Location
+  % #4: Start-End Date
+  % #5: Total Duration
+  % #6: Description
+  \parbox[t][][c]{\dimexpr \linewidth-1em}{
+    \parbox[t][][c]{0.65\linewidth}{%
+      \color{job-company}%
+      \vspace{.25em}
+      \large
+      \ifthenelse{\equal{#2}{}}{%
+        \fa{building} \textbf{#1}%
+      }{%
+        \href{#2}{\fa{building} \textbf{#1}}%
+      }
 
-			\small
-			\color{location}%
-			\fa{map-marker-alt}#3
-		}%
-		\hfill
-		\parbox[t][][c]{0.3\linewidth}{%
-			\raggedleft
-			\small
-			\color{calendar}
-			\fa{calendar-alt} #4
+      \small
+      \color{location}%
+      \fa{map-marker-alt}#3
+    }%
+    \hfill
+    \parbox[t][][c]{0.3\linewidth}{%
+      \raggedleft
+      \small
+      \color{calendar}
+      \fa{calendar-alt} #4
 
-			#5
-		}
-		\parbox[t][][c]{\linewidth}{%
-			\ifthenelse{\equal{#6}{}}{}{
-				\vspace{1em}
-				#6
-			}
-		}
-		\vspace{1em}
-	}
+      #5
+    }
+    \parbox[t][][c]{\linewidth}{%
+      \ifthenelse{\equal{#6}{}}{}{
+        \vspace{1em}
+        #6
+      }
+    }
+    \vspace{1em}
+  }
 }
 
 \newcommand{\jobposition}[5]{%
-	% #1: Position
-	% #2: Team or subtitle
-	% #3: Date
-	% #4: Duration
-	% #5: Description
-	\parbox[t][][c]{\dimexpr \linewidth-1em}{
-		\parbox[t][2.5em][t]{.70\linewidth}{
-			\color{job-position}%
-			\textbf{#1}
+  % #1: Position
+  % #2: Team or subtitle
+  % #3: Date
+  % #4: Duration
+  % #5: Description
+  \parbox[t][][c]{\dimexpr \linewidth-1em}{
+    \parbox[t][2.5em][t]{.70\linewidth}{
+      \color{job-position}%
+      \textbf{#1}
 
-			\ifthenelse{\equal{#2}{}}{}{%
-				#2%
-			}%
-		}
-		\parbox[t][2.5em][t]{.25\linewidth}{
-			\raggedleft
-			\footnotesize
-			\color{calendar}
-			\fa{calendar-alt} #3 \\
-			#4
-		}
-		\parbox[t]{\linewidth}{
-			\small#5
-		}
-		\vspace{1em}
-	}
+      \ifthenelse{\equal{#2}{}}{}{%
+        #2%
+      }%
+    }
+    \parbox[t][2.5em][t]{.25\linewidth}{
+      \raggedleft
+      \footnotesize
+      \color{calendar}
+      \fa{calendar-alt} #3 \\
+      #4
+    }
+    \parbox[t]{\linewidth}{
+      \small#5
+    }
+    \vspace{1em}
+  }
 }
 
 % Format Volunteer list
 % ------------------------------------------------------------------------------
 \newcommand{\volunteerorganization}[6]{%
-	% #1: Name or Acronym
-	% #2: URL
-	% #3: Full name of the organisation
-	% #4: Location
-	% #5: Start-End Date
-	% #6: Total Duration
-	\ifthenelse{\equal{\insidebar}{true}}{
-		\parbox[t][][t]{\sidebarinnerwidth}{%
-			\color{volunteer-organization}%
-			\vspace{.25em}
-			\ifthenelse{\equal{#2}{}}{%
-				\fa{building} \textbf{#1}%
-			}{%
-				\href{#2}{\fa{building} \textbf{#1}}%
-			}
+  % #1: Name or Acronym
+  % #2: URL
+  % #3: Full name of the organisation
+  % #4: Location
+  % #5: Start-End Date
+  % #6: Total Duration
+  \ifthenelse{\equal{\insidebar}{true}}{
+    \parbox[t][][t]{\sidebarinnerwidth}{%
+      \color{volunteer-organization}%
+      \vspace{.25em}
+      \ifthenelse{\equal{#2}{}}{%
+        \fa{building} #1%
+      }{%
+        \href{#2}{\fa{building} #1}%
+      }
 
-			\footnotesize
-			\raggedleft
-			\color{calendar}
-			\fa{calendar-alt} #5
+      \small
+      #3
 
-			#6
+      \vspace{1em}
+    }
+  }{
+    \parbox[t][][c]{\dimexpr \linewidth-1em}{
+      \parbox[t][][c]{0.65\linewidth}{%
+        \color{volunteer-organization}%
+        \vspace{.25em}
+        \large
+        \ifthenelse{\equal{#2}{}}{%
+          \fa{building} \textbf{#1}%
+        }{%
+          \href{#2}{\fa{building} \textbf{#1}}%
+        }
 
-			\raggedright
-			\small
-			#3
+        \normalsize
+        #3
 
-			\vspace{1em}
-		}
-	}{
-		\parbox[t][][c]{\dimexpr \linewidth-1em}{
-			\parbox[t][][c]{0.65\linewidth}{%
-				\color{volunteer-organization}%
-				\vspace{.25em}
-				\large
-				\ifthenelse{\equal{#2}{}}{%
-					\fa{building} \textbf{#1}%
-				}{%
-					\href{#2}{\fa{building} \textbf{#1}}%
-				}
+        \small
+        \color{location}%
+        \fa{map-marker-alt}#4
+      }%
+      \hfill
+      \parbox[t][][c]{0.3\linewidth}{%
+        \raggedleft
+        \small
+        \color{calendar}
+        \fa{calendar-alt} #5
 
-				\normalsize
-				#3
-
-				\small
-				\color{location}%
-				\fa{map-marker-alt}#4
-			}%
-			\hfill
-			\parbox[t][][c]{0.3\linewidth}{%
-				\raggedleft
-				\small
-				\color{calendar}
-				\fa{calendar-alt} #5
-
-				#6
-			}
-			\vspace{1em}
-		}
-	}
+        #6
+      }
+      \vspace{1em}
+    }
+  }
 }
 
 \newcommand{\volunteerposition}[4]{%
-	% #1: Position
-	% #2: Date
-	% #3: Duration
-	% #4: Description
-	\ifthenelse{\equal{\insidebar}{true}}{
-		\parbox[t][][t]{\sidebarinnerwidth}{%
-			\color{volunteer-position}%
-			\textbf{#1}
+  % #1: Position
+  % #2: Date
+  % #3: Duration
+  % #4: Description
+  \ifthenelse{\equal{\insidebar}{true}}{
+    \parbox[t][][t]{\sidebarinnerwidth}{%
+      \color{volunteer-position}#1
 
-			\raggedleft
-			\footnotesize
-			\color{calendar}
-			\fa{calendar-alt} #2 \\
-			#3
-			\vspace{1em}
-		}
-	}{
-		\parbox[t][][c]{\dimexpr \linewidth-1em}{
-			\parbox[t][2.5em][t]{.70\linewidth}{
-				\color{volunteer-position}%
-				\textbf{#1}
-			}
-			\parbox[t][2.5em][t]{.25\linewidth}{
-				\raggedleft
-				\footnotesize
-				\color{calendar}
-				\fa{calendar-alt} #2 \\
-				#3
-			}
-			\parbox[t]{\linewidth}{
-				\small#4
-			}
-			\vspace{1em}
-		}
-	}
+      \footnotesize
+      \color{calendar}
+      \fa{calendar-alt} #2
+
+      #3
+      \vspace{1em}
+    }
+  }{
+    \parbox[t][][c]{\dimexpr \linewidth-1em}{
+      \parbox[t][2.5em][t]{.70\linewidth}{
+        \color{volunteer-position}%
+        \textbf{#1}
+      }
+      \parbox[t][2.5em][t]{.25\linewidth}{
+        \raggedleft
+        \footnotesize
+        \color{calendar}
+        \fa{calendar-alt} #2 \\
+        #3
+      }
+      \parbox[t]{\linewidth}{
+        \small#4
+      }
+      \vspace{1em}
+    }
+  }
 }
 
 % Education
 % ------------------------------------------------------------------------------
 \newcommand{\schooldiploma}[4]{%
-	% #1: Diploma
-	% #2: Date
-	% #3: School Name
-	% #4: School URL
-	\parbox{\sidebarinnerwidth}{%
-		\small
-		\vspace{-1em}
-		\parbox[t]{.24\linewidth}{%
-			\color{calendar}\flushleft%
-			\fa{calendar-alt} #2
-		}%
-		\hfill%
-		\parbox[t]{.75\linewidth}{%
-			\flushright
-			{\color{school-diploma}\textbf{#1}}
+  % #1: Diploma
+  % #2: Date
+  % #3: School Name
+  % #4: School URL
+  \parbox{\sidebarinnerwidth}{%
+    \small
+    \vspace{-1em}
+    \parbox[t]{.24\linewidth}{%
+      \color{calendar}\flushleft%
+      \fa{calendar-alt} #2
+    }%
+    \hfill%
+    \parbox[t]{.75\linewidth}{%
+      \flushright
+      {\color{school-diploma}\textbf{#1}}
 
-			\vspace{-0.25em}
-			{\scriptsize\color{school-name}\fa{school} #3}
-		}
-		\vspace{1em}
-	}
+      \vspace{-0.25em}
+      {\scriptsize\color{school-name}\fa{school} #3}
+    }
+    \vspace{1em}
+  }
 }
 
 % Interests
 % ------------------------------------------------------------------------------
 \newcommand{\interest}[3]{%
-	% #1: Name
-	% #2: Desc
-	% #3: Icon
-	\parbox[t][][t]{\sidebarinnerwidth}{%
-		\color{interest-fg}
-		\parbox[t][][c]{\dimexpr \linewidth-3em}{%
-			\small
-			\ifthenelse{\equal{#3}{}}{}{%
-				\includegraphics[height=.75em]{#3}%
-			}
-			#1
-			\vspace{.25em}
-		}
+  % #1: Name
+  % #2: Desc
+  % #3: Icon
+  \parbox[t][][t]{\sidebarinnerwidth}{%
+    \color{interest-fg}
+    \parbox[t][][c]{\dimexpr \linewidth-3em}{%
+      \small
+      \ifthenelse{\equal{#3}{}}{}{%
+        \includegraphics[height=.75em]{sections/interests/#3}%
+      }
+      #1
+      \vspace{.25em}
+    }
 
-		\scriptsize%
-		\linespread{.75}\selectfont
-		#2
-		\normalsize
-		\vspace{1em}
-	}
+    \scriptsize%
+    \linespread{.75}\selectfont
+    #2
+    \normalsize
+    \vspace{1em}
+  }
 }
 
 % Projects
 % ------------------------------------------------------------------------------
 \newcommand{\project}[4]{%
-	% #1 : Name
-	% #2 : Desc
-	% #3 : Path to icon
-	% #4 : URL
-	\parbox[t][][t]{\dimexpr \linewidth-1em}{%
-		\color{project-fg}
-		\parbox[t][][c]{\dimexpr \linewidth-3em}{%
-			\small
-			\ifthenelse{\equal{#3}{}}{}{%
-				\includegraphics[height=.75em]{#3}%
-			}
-			\ifthenelse{\equal{#4}{}}{
-				#1
-			}{%
-				\href{#4}{#1}
-			}
-			\vspace{.25em}
-		}
+  % #1 : Name
+  % #2 : Desc
+  % #3 : Path to icon
+  % #4 : URL
+  \parbox[t][][t]{\dimexpr \linewidth-1em}{%
+    \color{project-fg}
+    \parbox[t][][c]{\dimexpr \linewidth-3em}{%
+      \small
+      \ifthenelse{\equal{#3}{}}{}{%
+        \includegraphics[height=.75em]{sections/projects/#3}%
+      }
+      \ifthenelse{\equal{#4}{}}{
+        #1
+      }{%
+        \href{#4}{#1}
+      }
+      \vspace{.25em}
+    }
 
-		\scriptsize%
-		\linespread{.75}\selectfont
-		#2
-		\normalsize
-		\vspace{1em}
-	}
+    \scriptsize%
+    \linespread{.75}\selectfont
+    #2
+    \normalsize
+    \vspace{1em}
+  }
 }
 
 % Language
 % ------------------------------------------------------------------------------
 \newcommand{\lang}[3]{
-	% #1: Name
-	% #2: Level
-	% #3: Path to image
-	\parbox[t]{\sidebarinnerwidth}{%
-		\ifthenelse{\equal{#3}{}}{}{
-			\includegraphics[width=2em,height=1em]{#3}
-		}
-		\textbf{#1}\hfill#2
-		\vspace{1em}
-	}
+  % #1: Name
+  % #2: Level
+  % #3: Path to image
+  \parbox[t]{\sidebarinnerwidth}{%
+    \ifthenelse{\equal{#3}{}}{}{
+      \includegraphics[width=2em,height=1em]{flags/#3}
+    }
+    \textbf{#1}\hfill#2
+    \vspace{1em}
+  }
 }
 
 % Skills
 % ------------------------------------------------------------------------------
 \newcommand{\skill}[3]{
-	% #1: Width
-	% #2: Title
-	% #3: Content, useful to use subskill
-	\parbox[t]{#1}{%
-		\centering#2
+  % #1: Width
+  % #2: Title
+  % #3: Content, useful to use subskill
+  \parbox[t]{#1}{%
+    \centering#2
 
-		\raggedright#3
-	}
+    \raggedright#3
+  }
 }
 
 \newcommand{\subskill}[3]{
-	% #1: Font-awesome icon
-	% #2: Image source
-	% #3: Description
-	\parbox[t][1em][c]{1.5em}{%
-		\centering%
-		\ifthenelse{\equal{#2}{}}{%
-			\fa{#1}%
-		}{%
-			\includegraphics[width=1em]{#2}%
-		}
-	}
-	\parbox[t][1em][c]{\dimexpr \linewidth-4em}{
-		#3
-	}
+  % #1: Font-awesome icon
+  % #2: Image source
+  % #3: Description
+  \parbox[t][1em][c]{1.5em}{%
+    \centering%
+    \ifthenelse{\equal{#2}{}}{%
+      \fa{#1}%
+    }{%
+      \includegraphics[width=1em]{sections/skills/#2}%
+    }
+  }
+  \parbox[t][1em][c]{\dimexpr \linewidth-4em}{
+    #3
+  }
+
 }
 
 % Tag (framed word or phrase)
 % ------------------------------------------------------------------------------
 % Adapted from AltaCV: https://github.com/liantze/AltaCV
 \newcommand{\tag}[2]{%
-	\fcolorbox{tag-border!30}{white}{%
-		\scriptsize
-		\parbox[t][1em][c]{1em}{
-			\includegraphics[width=1em,height=1em]{#1}
-		}
-		\parbox[t][1em][c]{0.1\linewidth}{
-			#2
-		}
-	}
+  \fcolorbox{tag-border!30}{white}{%
+    \scriptsize
+    \parbox[t][1em][c]{1em}{
+      \includegraphics[width=1em,height=1em]{#1}
+    }
+    \parbox[t][1em][c]{0.1\linewidth}{
+      #2
+    }
+  }
 }
+
+\newcommand{\skilltag}[2]{%
+  \fcolorbox{tag-border!30}{white}{%
+    \scriptsize
+    \parbox[t][1em][c]{1em}{
+      \includegraphics[width=1em,height=1em]{sections/skills/#1}
+    }
+    \parbox[t][1em][c]{0.1\linewidth}{
+      #2
+    }
+  }
+}
+
+
 
 % FINAL FORMATTING
 % ------------------------------------------------------------------------------

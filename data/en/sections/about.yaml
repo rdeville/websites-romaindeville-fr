@@ -6,9 +6,9 @@ section:
   showOnNavbar: true
 
 designation: DevOps / SRE
-company:
-  name: Dougs Compta
-  url: "https://www.dougs.fr"
+# company:
+#   name: Dougs Compta
+#   url: "https://www.dougs.fr"
 
 summary: |-
   IT enthusiast, I'm focused on Platform Administration, Automomatisation and
@@ -42,16 +42,22 @@ socialLinks:
 # For example, you can put link for your resume.
 resourceLinks:
   - title: "EN-Color"
-    url: "files/resume.pdf"
+    url: files/resume/en_US/rdeville-devops-cloud-en.pdf
     logo: "/images/flags/us.png"
   - title: "EN-Black & White"
-    url: "files/resume.pdf"
+    url: files/resume/en_US/rdeville-devops-cloud-en-bw.pdf
+    logo: "/images/flags/us.png"
+  - title: "EN-ATS Ready"
+    url: files/resume/en_US/rdeville-devops-cloud-ats-en.pdf
     logo: "/images/flags/us.png"
   - title: "FR-Color"
-    url: "files/resume.pdf"
+    url: files/resume/fr_FR/rdeville-devops-cloud-fr.pdf
     logo: "/images/flags/fr.png"
   - title: "FR-Black & White"
-    url: "files/resume.pdf"
+    url: files/resume/fr_FR/rdeville-devops-cloud-fr-bw.pdf
+    logo: "/images/flags/fr.png"
+  - title: "FR-ATS Ready"
+    url: files/resume/fr_FR/rdeville-devops-cloud-ats-fr.pdf
     logo: "/images/flags/fr.png"
 
 # Show your badges

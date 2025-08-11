@@ -53,9 +53,6 @@ volunteer:
           Illyse is an __Internet Service Provider in the Lyon and Saint-Étienne
           area__. Indeed, the best way to __promote Net Neutrality__ is simply
           to be part of this network and to participate in its development.
-      pdf_desc: |-
-          Illyse is an association which goals are the promotion of a neutral
-          and open computer network, respectful of its users and their privacy.
       location: Lyon, Rhône-Alpes, France
       start: 2016-03-01
       end: 2020-11-01
@@ -95,10 +92,6 @@ volunteer:
             * Information Technologies Education,
             * Cultural and civic actions.
 
-      pdf_desc: |-
-          "Maison Pour Tous" (MPT) aims is to provide access to
-          culture and leisure for as many people as possible, to develop
-          citizenship and to promote personal development.
       location: Lyon, Rhône-Alpes, France
       start: 2016-06-01
       end: 2020-11-01
@@ -151,13 +144,10 @@ volunteer:
             * __Workshops and outside photographic session__ to practice the
               theoretical knowledge acquired during training.
 
-      pdf_desc: |-
-          "Graines d'Images" is present at lots of events on the Doua campus,
-          offers training, equipment loan,…
       location: Villeurbanne, Rhône-Alpes, France
       start: 2009-06-01
-      end: 2014-06-01
-      duration: 5 years
+      end: "2018-06-01"
+      duration: 9 years
     positions:
       - designation: Vice-President
         start: 2010-06-01

@@ -31,25 +31,33 @@ $themes: (
     'text-over-accent-color': #e4e4e7,
     // slate 50
     'bg-primary': #f8fafc,
-    // slate 900
-    'bg-primary-inverse': #0f172a,
-    // slate 200
-    'bg-secondary': #e2e8f0,
-    'bg-card': #fff,
+    // zinc 200
+    'bg-primary-inverse': #e4e4e7,
+    // zinc 100
+    'bg-secondary': #f4f4f5,
+
+    // zinc 200
+    'bg-card': #e4e4e7,
     // slate 800
-    'heading-color': #1e293b,
-    // slate 700
-    'text-color': #334155,
+    'heading-color': #008236,
+    // slate 800
+    'text-color': #1d293d,
     // slate 300
     'inverse-text-color': #cbd5e1,
     // slate 500
-    'muted-text-color': #64748b,
+    'muted-text-color': #0069a8,
     // red 600
-    'inline-code-color': #dc2626,
-    // amber 200
-    'highlight-color': #fde68a,
+    'inline-code-color': #008236,
+    // gray 900
+    'highlight-color': #101828,
     // slate 900
-    'footer-color': #0f172a,
+    'footer-color': #e4e4e7,
+
+    // Section about
+    // sky 900
+    'position': #0084d1,
+    // red 400
+    'social-icon': #e7000b,
   ),
   'dark': (
     // green 600
@@ -73,11 +81,11 @@ $themes: (
     // slate 900
     'inverse-text-color': #3f3f46,
     // slate 500
-    'muted-text-color': #FFFF8b,
+    'muted-text-color': #b8e6fe,
     // red 600
     'inline-code-color': #dc2626,
     // sky 200
-    'highlight-color': #b8e6fe,
+    'highlight-color': #f3f4f6,
     // slate 900
     'footer-color': #27272a,
 
