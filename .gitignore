@@ -4,6 +4,7 @@
 *.aux
 *.log
 *.pdf
+!static/**
 *.out
 
 # BEGIN DOTGIT-SYNC BLOCK MANAGED
