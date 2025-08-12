@@ -2,6 +2,7 @@
   fontsize=10pt
 ]{resume}
 
+
 % IMAGES PATH
 % ------------------------------------------------------------------------------
 \graphicspath{{../../assets/images/}}
@@ -9,21 +10,28 @@
 % FONTS
 % ------------------------------------------------------------------------------
 \setmainfont{\custommainfont}
-\renewfontfamily\nerdfont{\customnerdfont}
 
 % CONTENT
 % ------------------------------------------------------------------------------
 \begin{document}
-\input{common.tex}
-\begin{center}
-	\vfill
-	\scriptsize
-	{
-		\textit
-		Si vous consultez ce CV dans un lecteur PDF, {\color{blue-800}les textes en
-				bleu} sont des liens hypertextes cliquables
-	}
-\end{center}
+\headerbg{neutral-300}
+\headerfg{neutral-800}
+\sidebarbg{gray-100}
+\sectiontitlefg{slate-800}
+\calendarfg{slate-700}
+\addressfg{stone-900}
+\contacticonfg{red-900}
+\jobcompanyfg{slate-800}
+\jobpositionfg{lime-900}
+\volunteerorgfg{slate-800}
+\volunteerposfg{lime-900}
+\schooldiplomafg{lime-900}
+\schoolnamefg{slate-900}
+\projectfg{slate-800}
+\interestfg{slate-800}
+\tagborder{green-500!30}
+\isblackandwhite{false}
 
+\input{common.tex}
 \end{document}%
 % vim: ft=tex
