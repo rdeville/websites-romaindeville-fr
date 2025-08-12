@@ -7,34 +7,30 @@
 % ------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resumeats}
-\LoadClass{article}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+\ProcessOptions*
+\LoadClass{extarticle}
 
 % REQUIRED PACKAGES
 % ------------------------------------------------------------------------------
 \RequirePackage{fontspec}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{ifthen}
-% \RequirePackage{tikz}
-% \usetikzlibrary{arrows}
-% \RequirePackage[skins]{tcolorbox}       % somehow required for tikz to work at all
-% \RequirePackage{graphicx}
-% \RequirePackage{xcolor}
-% \RequirePackage{xstring}
+\RequirePackage{comment}
 \RequirePackage{fontawesome5}
-% \RequirePackage{academicons}
-% \RequirePackage{xpatch}
 \RequirePackage{scrlayer-scrpage}
 \RequirePackage{hyperref}
 \hypersetup{
-  colorlinks=true,
-  linkcolor=blue-800,
-  filecolor=magenta,
-  urlcolor=blue-800,
+	colorlinks=true,
+	linkcolor=blue-800,
+	filecolor=magenta,
+	urlcolor=blue-800,
 }
 
 \RequirePackage{titlesec}
 \RequirePackage{enumitem}
 \RequirePackage{xcolor}
+
 % Default sizes, margins, ...
 \newlength\marginleft
 \newlength\marginright
@@ -45,25 +41,24 @@
 \setlength\marginleft{1cm}
 \setlength\marginright{\marginleft}
 \setlength\margintop{1cm}
-\setlength\marginbottom{\margintop}
+\setlength\marginbottom{0.5cm}
 
 \geometry{
-  a4paper,
-  margin=1in,
-  left=\marginleft,
-  right=\marginright,
-  top=\margintop,
-  bottom=\marginbottom
+	left=\marginleft,
+	right=\marginright,
+	top=\margintop,
+	bottom=\marginbottom
 }
+\setlist{nolistsep}
 
 % Font customization
 \def\custommainfont{Carlito}
-\def\customnerdfont{FiraCode Nerd Font}
 
 % Convenience functions to use fontawesome5 icons
-\renewcommand{\fa}[1]{
-  \faIcon[solid]{#1}
+\newcommand{\fa}[1]{
+	\faIcon[solid]{#1}
 }
+
 
 % CONFIGURATION
 % ------------------------------------------------------------------------------
@@ -360,202 +355,211 @@
 \newcommand{\location}[1]{\def\@location{#1}}
 \newcommand{\driver}[1]{\def\@driver{#1}}
 \newcommand{\link}[3]{
-  \ifthenelse{\equal{#1}{home}}{\def\@home{#2}}{}
-  \ifthenelse{\equal{#1}{gitlab}}{\def\@gitlab{#2}}{}
-  \ifthenelse{\equal{#1}{github}}{\def\@github{#2}}{}
-  \ifthenelse{\equal{#1}{linkedin}}{\def\@linkedin{#2}}{}
+	\ifthenelse{\equal{#1}{linkedin}}{\def\@linkedin{#2}}{}
+	\ifthenelse{\equal{#1}{github}}{\def\@github{#2}}{}
+	\ifthenelse{\equal{#1}{gitlab}}{\def\@gitlab{#2}}{}
+	\ifthenelse{\equal{#1}{home}}{\def\@home{#2}}{}
 }
 % NOT USED IN ATS BUT REQUIRED TO SHARE SAME HEADER !
 \newcommand{\photo}[3][]{}
 
 % Assemble the header
 \newcommand{\makeheader}{% header bar is a minipage
-  \begin{minipage}{\textwidth}
-    \center
-    {\Huge\bfseries\MakeUppercase{\@name}\par}
-    \medskip
-    \@tagline
+	\begin{minipage}{\textwidth}
+		\center
+		{\Huge\bfseries\MakeUppercase{\@name}\par}
+		\medskip
+		\parbox[t]{0.98\textwidth}{%
+			\@tagline
 
-    \medskip
-    \fa{envelope} {\href{mailto:\@email}{\@email}} | \fa{phone} {\href{tel:\@phone}{\@phone}}
+		}
 
-    \medskip
-    \fa{linkedin} {\href{https://\@linkedin}{\@linkedin}}
-    \fa{github} {\href{https://\@github}{\@github}}
-    \fa{gitlab} {\href{https://\@gitlab}{\@gitlab}}
-    \fa{home} {\href{https://\@home}{\@home}}
+		\medskip
+		\fa{envelope} {\href{mailto:\@email}{\@email}} | \fa{phone} {\href{tel:\@phone}{\@phone}}
 
-    \bigskip
-  \end{minipage}
+		\medskip
+		\fa{linkedin} {\href{https://\@linkedin}{\@linkedin}}
+		\fa{github} {\href{https://\@github}{\@github}}
+		\fa{gitlab} {\href{https://\@gitlab}{\@gitlab}}
+		\fa{home} {\href{https://\@home}{\@home}}
+
+		\bigskip
+	\end{minipage}
 }
 
 % ------------------------------------------------------------------------------
 % Contact Info
 % ------------------------------------------------------------------------------
 \newcommand{\infofield}[2]{
-  \textcolor{contact_icon}{#1} #2
+	\textcolor{contact_icon}{#1} #2
 }
 
 % SECTIONS, SUBSECTIONS, AND MORE
 % ------------------------------------------------------------------------------
 % Redefine section in caps, bold and with rule below
 \renewcommand{\section}[2][]{%
-  {
-    \Large\bfseries
-    \color{section-title}
-    \MakeUppercase{#2}
-  }\\[-0.75em]
-  \rule{\linewidth}{1.0pt}\par
-  \medskip
+	{
+			\Large\bfseries
+			\color{section-title}
+			\MakeUppercase{#2}
+		}\\[-0.75em]
+	\rule{\linewidth}{1.0pt}\par
+	\medskip
 }
 
 \renewcommand{\subsection}[2][]{%
-  {
-    \large\bfseries
-    \color{section-title}
-    #2
-  }\\[-0.75em]%
-  \medskip
+	{
+			\large\bfseries
+			\color{section-title}
+			#2
+		}\\[-0.75em]%
+	\medskip
 }
 
 % Skills
 % ------------------------------------------------------------------------------
 \newcommand{\skill}[3]{
-  % #1: Width
-  % #2: Title
-  % #3: Content, useful to use subskill
-  \parbox[t]{0.15\linewidth}{%
-    \textbf{#2}:
-  }%
-  \parbox[t]{0.80\linewidth}{%
-    \vbox{#3}
-  }%
+	% #1: Width
+	% #2: Title
+	% #3: Content, useful to use subskill
+	\parbox[t]{0.15\linewidth}{%
+		\textbf{#2}:
+	}%
+	\parbox[t]{0.80\linewidth}{%
+		\vbox{#3}
+	}%
 
 }
 
 \newcommand{\subskill}[3]{
-  % #1: Font-awesome icon
-  % #2: Image source
-  % #3: Description
-  #3,
+	% #1: Font-awesome icon
+	% #2: Image source
+	% #3: Description
+	#3,
 }
 
-\newcommand{\tag}[2]{}
+\newcommand{\tag}{}
 \newcommand{\skilltag}[2]{}
+% %
+%   \begin{comment}
+%     #1#2
+%   \end{comment}
+% }
 
-  %
+%
 % % Format job list
 % % ------------------------------------------------------------------------------
-\newcommand{\jobcompany}[5]{%
-  % #1: Name
-  % #2: URL
-  % #3: Location
-  % #4: Date
-  % #5: Duration
-  \vbox{
-    {%
-      \large\bfseries\color{job-company}%
-      \ifthenelse{\equal{#2}{}}{#1}{\href{#2}{#1}}%
-    }\hfill #3
-  }
-  \smallskip
+\newcommand{\jobcompany}[6]{%
+	% #1: Name
+	% #2: URL
+	% #3: Location
+	% #4: Date
+	% #5: Duration
+	\vbox{
+		{%
+				\large\bfseries\color{job-company}%
+				\ifthenelse{\equal{#2}{}}{#1}{\href{#2}{#1}}%
+			}\hfill #3
+	}
+	\smallskip
 }
 
 \newcommand{\jobposition}[5]{%
-  % #1: Position
-  % #2: Date
-  % #3: Duration
-  % #4: Description
-  \vbox{
-    {%
-      \bfseries\color{job-position}#1
-    } \hfill #3, #4
-  }
-  \smallskip
+	% #1: Position
+	% #2: Date
+	% #3: Duration
+	% #4: Description
+	\vbox{
+		\textbf{\color{job-position}#1}%
+		\hfill #3
+	}
+	\vbox{
+		{\color{job-position}#2}
+		\hfill #4
+	}
+	\parbox[t]{.95\linewidth}{#5}
 
-  \parbox[t]{.95\linewidth}{#5}
-
+	\vspace{1em}
 }
 %
 % % Format Volunteer list
 % % ------------------------------------------------------------------------------
 \newcommand{\volunteerorganization}[6]{%
-  % #1: Image
-  % #2: Name
-  % #3: URL
-  % #4: Organization Details
-  % #5: Description
-  % #6: Location
-  % #7: Date
-  % #8: Extra content (mainly to call \volunteerposition)
-  \vbox{
-    {%
-      \large\bfseries\color{job-company}%
-      \ifthenelse{\equal{#2}{}}{#1}{\href{#2}{#1}}%
-    }\hfill #4
-  }
+	% #1: Image
+	% #2: Name
+	% #3: URL
+	% #4: Organization Details
+	% #5: Description
+	% #6: Location
+	% #7: Date
+	% #8: Extra content (mainly to call \volunteerposition)
+	\vbox{
+		\vspace{0.5em}
+		{%
+				\large
+				\bfseries
+				\color{job-company}%
+				\ifthenelse{\equal{#2}{}}{#1}{\href{#2}{#1}}%
+			}\hfill #4
 
-  \smallskip
+		#3
+		\vspace{0.5em}
+	}
 }
 
 \newcommand{\volunteerposition}[4]{%
-  % #1: Position
-  % #2: Date
-  % #3: Duration
-  % #4: Description
-  \vbox{
-    {%
-      \bfseries\color{job-position}#1
-    } \hfill #2, #3
-  }
-  \smallskip
+	% #1: Position
+	% #2: Date
+	% #3: Duration
+	% #4: Description
+	\vbox{
+		\vspace{0.5em}
+		{%
+			\bfseries\color{job-position}#1
+		}
+		\hfill #2 \\
+		\raggedleft
+		#3
 
-  \vbox{#4}
-
+		#4%
+	}
 }
 %
 % % Format education list
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\schooldiploma}[4]{%
-  % #1: Not Handled ??? DO NOT KNOW WHY
-  % #2: Diploma
-  % #3: Date
-  % #5: Description
-  \vbox{
-    \textbf{#1}, #3 \hfill \textbf{#2}
-  }
+\newcommand{\schooldiploma}[5]{%
+	% #1: Diploma
+	% #2: Speciality
+	% #3: Date
+	% #4: School
+	% #5: URL
+	\vbox{
+		\ifthenelse{\equal{#2}{}}{%
+			\textbf{#1}, #4 \hfill #3
+		}{%
+			\textbf{#1, #2}, #4 \hfill #3
+		}
+	}
 }
 
 \newcommand{\interest}[3]{%
-  \parbox{0.9\linewidth}{
-    \textbf{#1}, #2
-    \smallskip
-  }
+	\parbox{0.9\linewidth}{
+		\textbf{#1}, #2
+		\smallskip
+	}
 
 }
 
 \newcommand{\project}[4]{%
-  \vbox{
-    \href{#4}{\textbf{#1}}, #2
-  }
+	\vbox{
+		\href{#4}{\textbf{#1}}, #2
+	}
 
 }
 
 \newcommand{\lang}[3]{
-  \textbf{#1}: #2
+	\textbf{#1}: #2
 
 }
 
-% % tag (framed word or phrase)
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% % adapted from AltaCV: https://github.com/liantze/AltaCV
-% \newcommand{\tag}[1]{%
-%   \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner
-%   xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
-% }
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  THE END
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % vim: ft=tex.latex
