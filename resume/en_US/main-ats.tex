@@ -1,15 +1,8 @@
-% !TeX TS-program = lualatex
-% \begin{filecontents*}[overwrite]{resumeats.cls}
-% \NeedsTeXFormat{LaTeX2e}
-% \ProvidesClass{resumeats}
-% \LoadClass{beamer}
-% \RequirePackage{fontspec}
-% \end{filecontents*}
-
 \documentclass[
-  a4paper
-  fontsize=10pt
+  10pt
 ]{resumeats}
+
+\usepackage{lmodern}    % Allows selecting all possible font size
 
 % FONTS
 % ------------------------------------------------------------------------------
@@ -18,69 +11,75 @@
 % CONTENT
 % ------------------------------------------------------------------------------
 \begin{document}
-
+%\fontsize{8pt}{10pt}\selectfont
 \input{header}
 \input{basics}
 \input{network}
 \makeheader
 
-\section{Compétences}
+\section{Skills}
 \input{skills}
 \bigskip
 
-\section{Expériences Professionnelles}
+\section{Professional Experiences}
 \input{experiences/dougs/company}
 \input{experiences/dougs/02.lead_devops_sre}
 \input{experiences/dougs/01.devops_sre}
-\textcolor{endrules}{\rule{\linewidth}{0.5pt}}
+
+\textcolor{endrules}{\rule{0.975\linewidth}{0.5pt}}
 
 \input{experiences/skyloud/company}
 \input{experiences/skyloud/01.devops}
-\textcolor{endrules}{\rule{\linewidth}{0.5pt}}
+
+\textcolor{endrules}{\rule{0.975\linewidth}{0.5pt}}
 
 \input{experiences/liris/company}
 \input{experiences/liris/04.platform_engineer}
-
-\newpage
 \input{experiences/liris/03.phd_student}
 \input{experiences/liris/02.final_internship}
 \input{experiences/liris/01.internship}
 
 \bigskip
-\section[\fa{cogs}]{Expériences Associatives}
+\section{Volunteering}
 \input{volunteers/lov.tex}
-\textcolor{endrules}{\rule{\linewidth}{0.5pt}}
+
+\textcolor{endrules}{\rule{0.975\linewidth}{0.5pt}}
+
 \input{volunteers/illyse.tex}
-\textcolor{endrules}{\rule{\linewidth}{0.5pt}}
+
+\textcolor{endrules}{\rule{0.975\linewidth}{0.5pt}}
+
 \input{volunteers/mpt.tex}
-\textcolor{endrules}{\rule{\linewidth}{0.5pt}}
+
+\textcolor{endrules}{\rule{0.975\linewidth}{0.5pt}}
+
+\newpage
 \input{volunteers/graines_images.tex}
 
-\bigskip
 \section{Formation}
 \input{education}
 
 \bigskip
-\section{Langues}
+\section{Languages}
 \input{lang}
 
 
 \bigskip
-\section[\nerdfont]{Projets}
+\section{Projects}
 \input{projects}
 
 \bigskip
-\section{Intérêts}
+\section{Interests}
 \input{interests}
 
 \begin{center}
-  \vfill
-  \scriptsize
-  {
-    \textit
-    Si vous consultez ce CV dans un lecteur PDF, {\color{blue-800}les textes en
-        bleu} sont des liens hypertextes cliquables
-  }
+	\vfill
+	\scriptsize
+	{
+		\textit
+		If you are reading this resume in a PDF viewer,
+		{\color{blue-800}blue texts} are clickable hypertext links.
+	}
 \end{center}
 
 \end{document}%
