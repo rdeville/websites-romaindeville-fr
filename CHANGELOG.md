@@ -1,6 +1,23 @@
 <!-- markdownlint-disable-file -->
 # CHANGELOG
 
+## v0.1.1 (2025-08-16)
+
+### 🩹 Patch
+
+  * ⚡️ Improve classes management, review resume content (!4) by Romain Deville ([`9de92a6`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/9de92a6b374687ea9b398b06f480751d0cc7d2a6))
+  * ⚡️(resume/cls): Update latex class file, drop now useless bw dedicated class by Romain Deville ([`47384dd`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/47384ddf6e0ba2d270d65d5f9c1766132df5e689)) 🔏
+  * 🍱(static/files): Update rendered PDF resume by Romain Deville ([`7ecbd4b`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/7ecbd4b53fa394cadd9643562aa1e18bac20e51b)) 🔏
+  * 🔧(data/fr): Update content of french HTML resume by Romain Deville ([`b90e877`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/b90e877eac46b87d0900fd2c49e69b180a3d7540)) 🔏
+  * 🔧(data/en): Update content of HTML english resume by Romain Deville ([`c0d9a51`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/c0d9a51d01690bdef796c8d75b9e8cddd05fdc84)) 🔏
+  * 🔧(resume/fr): Update content of french LaTeX resume by Romain Deville ([`4fdb586`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/4fdb586e08d3a38d7bf38a07c7f39262daa53953)) 🔏
+  * 🔧(resume/en): Update content of english LaTeX resume by Romain Deville ([`3958886`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/3958886a432dfb46172778f813172a75656c7b7c)) 🔏
+
+### 🔊 Others
+
+  * 🔨 Update Makefile to improve HTML and PDF build by Romain Deville ([`472f9ec`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/472f9ec9e2586b07b0c8d780c1b3ea57a3d66dab)) 🔏
+  * 🔨(scripts): Add script to compress PDF by Romain Deville ([`ab58961`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/ab5896161024323203dec725fa9bf1994fbedd43)) 🔏
+
 ## v0.1.0 (2025-08-11)
 
 ### ✨ Minor
