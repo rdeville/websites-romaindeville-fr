@@ -209,7 +209,7 @@ projects:
   - name: Dynamic Prompt
     logo: /images/sections/projects/programs-dynamic-prompt.png
     role: Maintainer
-    timeline: "2020 - Present"
+    timeline: "2020 - 2024 (archived)"
     repo: https://framagit.org/rdeville-public/programs/dynamic-prompt
     summary: |
       Set of scripts to render a dynamic prompt showing environment
@@ -223,7 +223,7 @@ projects:
   - name: Resume Builder
     logo: /images/sections/projects/programs-resume-builder.png
     role: Maintainer
-    timeline: "2020 - Present"
+    timeline: "2020 - 2024 (archived)"
     repo: https://framagit.org/rdeville-public/programs/resume-builder
     summary: |
       Program to render a website and a PDF resume from a YAML data file.
@@ -240,6 +240,8 @@ projects:
     timeline: "2020 - Present"
     repo: https://framagit.org/rdeville-public/websites/romaindeville-fr
     summary: |
+      Configuration repository to render my resume as a website and a PDF based
+      on LaTeX and Hugo.
       Program to render a website and a PDF resume from a YAML data file.
     tags:
       - *websites
@@ -249,10 +251,11 @@ projects:
   - name: 2022 ExpeNum
     logo: /images/sections/projects/documents-2022-expenum.png
     role: Maintainer
-    timeline: "2022"
+    timeline: "2022 (archived)"
     repo: https://framagit.org/rdeville-public/documents/expenum-2020-02
     summary: |
-      Slide used during ExpeNums at the MPT. Internet: machines, cats and humans.
+      Slides used for the conference "Internet, machine, human and cats" during
+      ExpeNums at the "Maison Pour Tous, Salle des Rancy".
     tags:
       - *documents
       - *latex

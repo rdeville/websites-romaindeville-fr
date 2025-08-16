@@ -33,7 +33,7 @@ experiences:
 
           As Lead DevOps/SRE within the Prod & System team, my primary
           responsibilities were to manage the team's roadmaps in collaboration
-          with the manager, the architect, and the CISO.
+          with the manager, the software architect, and the CISO.
 
           In addition, I contributed to the development of the CIO department,
           which consisted of IT, DPO, CISO, and Infrastructure departments.
@@ -190,7 +190,7 @@ experiences:
           - Prometheus
 
   - company:
-      name: LIRIS (UMR 5205)
+      name: LIRIS (UMR 5205), CNRS
       logo: /images/sections/experiences/liris.png
       url: https://liris.cnrs.fr
       duration: 6 years & 9 months
@@ -287,7 +287,7 @@ experiences:
           - Helm
           - Python
 
-      - designation: PhD Student
+      - designation: PhD Candidate
         start: 2014-03-01
         end: 2018-08-31
         duration: 4 years & 5 months
@@ -299,9 +299,9 @@ experiences:
           represent 2D (images) and 2D+t (videos, cellular automata) data.
 
 
-          During that time, I went from almost zero knowledge on the subject
-          of data mining to the implement of new algorithm which I compared
-          to the current state-of-the-art.
+          During that time, I went from almost zero knowledge on the subject of
+          data mining to the implementation of new algorithm which I compared to
+          the current state-of-the-art.
 
 
           This project led me to my thesis defense called

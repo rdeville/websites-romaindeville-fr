@@ -50,25 +50,26 @@ skills:
       - name: Ubuntu
         logo: /images/sections/skills/ubuntu.png
 
-  - name: Windows
-    logo: /images/sections/skills/windows.png
-    summary: |-
-      Second operating system I am using.
-
-      I acquired some knowledge of windows administration during my
-      volunteer activities, in particular within the
-      [MPT](https://www.sallesdesrancy.com).
-
-      On the other hand, I am not used to developing on a Windows
-      operating system.
-    categories:
-      - *basic
+  # - name: Windows
+  #   logo: /images/sections/skills/windows.png
+  #   summary: |-
+  #     Second operating system I am using.
+  #
+  #     I acquired some knowledge of windows administration during my
+  #     volunteer activities, in particular within the
+  #     [MPT](https://www.sallesdesrancy.com).
+  #
+  #     On the other hand, I am not used to developing on a Windows
+  #     operating system.
+  #   categories:
+  #     - *basic
 
   - name: MacOS
     logo: /images/sections/skills/apple.png
     summary: |-
       Operating system on which I started computer development but which I
-      no longer use very often.
+      no longer use very often, mainly in professional environment when it is
+      the provided OS.
 
 
       I still maintain a good overall knowledge of the MacOS operating
@@ -100,10 +101,10 @@ skills:
       - *cloud
     summary: |
       I'm use to design, deploy, and manage cloud infrastructure on different
-      cloud providers such as OpenStack, AWS, GCP or Scaleway.
+      cloud providers such as OpenStack, AWS, GCP, Scaleway or Outscale.
 
-      Adept of the in Infrastructure as Codel tools (such as OpenTofu,
-      Terraform), I can ensure deployment of scalable, high-availability
+      Adept of the in Infrastructure as Code tools, such as OpenTofu,
+      Terraform, I can ensure deployment of scalable, high-availability
       environments with cloud security best practices and cost optimization.
     softwares:
       - name: Openstack
@@ -120,8 +121,8 @@ skills:
   - name: Containers
     logo: /images/sections/skills/oci.jpg
     summary: |
-      Write most of the programs as OCI container to be run for Container
-      Runtime Interface such as Docker or ContainerD.
+      I'm able to write declaration of OCI container for programs to be run by
+      Container Runtime Interface such as Docker or ContainerD.
 
       Experienced with multi-stage, multi-arch build process and optimization of
       image to reduce size and manage cost efficiently.
@@ -154,7 +155,7 @@ skills:
   - name: Shell Scripting
     logo: /images/sections/skills/bash.png
     summary: |-
-      Development of advanced scripts to:
+      I'm used to develop advanced scripts to:
 
       * Automate almost everything I do in my terminals
       * Install software and configuration
@@ -188,12 +189,11 @@ skills:
   - name: Javascript
     logo: /images/sections/skills/javascript.png
     summary: |-
-      Good knowledge in Javascript mainly to develop scripts used to
-      augment usage of documentation tools such as
-      [Docusaurus](https://docusaurus.io/) or to automate release of git
-      repository.
+      Good knowledge in Javascript, I'm able to develop micro-service for a
+      cloud oriented applications.
 
-      I'm also able to develop micro-service for a cloud oriented applications.
+      I'm also able to use it to develop scripts to augment usage of
+      documentation tools such as [Docusaurus](https://docusaurus.io/).
     categories:
       - *language
     softwares:
@@ -238,7 +238,8 @@ skills:
   - name: CI-CD
     logo: /images/sections/skills/ci-cd.png
     summary: |-
-      Use of continuous integration and continuous deployment tools to:
+      Adept of the usage of Continuous Integration and Continuous
+      deployment, such as Gitlab CI, Github Workflow or ArgoCD, to
 
         * Ensure validity of test suite before deployment,
         * Automate infrastructures deployment and provisionning in the cloud,
@@ -279,7 +280,7 @@ skills:
   - name: Infrastructure as Code
     logo: /images/sections/skills/iac.png
     summary: |-
-      Adept of GitOps methodology, I developped strong knowledge about
+      Lover of GitOps methodology, I developed strong knowledge about
       Infrastructure as Code to deploy resources such as Cloud Infrastructure
       but also Github or Gitlab repository and teams, etc.
 
@@ -309,11 +310,11 @@ skills:
   - name: Database Management
     logo: /images/sections/skills/db.png
     summary: |-
-      Over the time, I developped knowledge about Database management, such as
-      deployement of High availability DB instances and permission management.
+      Over the time, I developed knowledge about Database management, such as
+      deployment of High availability DB instances and permission management.
 
       I'm able to deploy and manage DB as Saas or self-hosted in kubernetes
-      environnements.
+      environments.
 
     categories:
       - *sre
