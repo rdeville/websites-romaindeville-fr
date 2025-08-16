@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Skills
+  name: Compétences
   id: skills
   enable: true
   weight: 2
@@ -11,7 +11,7 @@ section:
 buttons:
   - name: All
     filter: all
-  - name: OS & Basics
+  - name: OS & Outils
     filter: &basic basic
   - name: Langage
     filter: &language language
@@ -49,18 +49,18 @@ skills:
       - name: Ubuntu
         logo: /images/sections/skills/ubuntu.png
 
-  - name: Windows
-    logo: /images/sections/skills/windows.png
-    summary: |-
-      Second système d'exploitation que j'utilise.
-
-      J'ai acquis quelques connaissances en administration de windows durant mon
-      volontariat, principalement au sein de la [MPT](https://www.sallesdesrancy.com).
-
-      D'un autre coté, je n'utilise pas ce système d'exploitation pour le
-      développement.
-    categories:
-      - *basic
+  # - name: Windows
+  #   logo: /images/sections/skills/windows.png
+  #   summary: |-
+  #     Second système d'exploitation que j'utilise.
+  #
+  #     J'ai acquis quelques connaissances en administration de windows durant mon
+  #     volontariat, principalement au sein de la [MPT](https://www.sallesdesrancy.com).
+  #
+  #     D'un autre coté, je n'utilise pas ce système d'exploitation pour le
+  #     développement.
+  #   categories:
+  #     - *basic
 
   - name: MacOS
     logo: /images/sections/skills/apple.png
@@ -71,21 +71,22 @@ skills:
 
 
       Je maintiens malgré tout de bonne connaissances concernant le système
-      d'exploitation MacOS au travers de ma veille technologique. Cela est
-      principalement du au fait que je travaille avec des collègues sous MacOS.
-      et qu'il s'agit du système d'exploitation qui m'est
+      d'exploitation MacOS au travers de ma veille technologique. Principalement
+      du au fait que je travaille avec des collègues sous MacOS.
     categories:
       - *basic
 
   - name: Kubernetes
     logo: /images/sections/skills/kubernetes.png
     summary: |
-      As Kubernetes Administrator, I developed an strong competences in deploying,
-      managing, and maintaining Kubernetes clusters in production environments.
+      En tant qu'administrateur de clusters Kubernetes, j'ai développé de bonne
+      compétences dans le déploiement, la gestion et le maintiens en condition
+      d'applications dans des environnements en production.
 
-      I'm proficient in container orchestration, infrastructure automation, and
-      CI/CD integration to ensure high availability, scalability, and performance
-      of applications.
+      Je suis à l'aise avec l'orchestration de container, l'automatisation de
+      l'infrastructure et l'intégration d'outil CI/CD pour assurer la haute
+      disponibilité, le passage à l'échelle ainsi que la performance des
+      applications.
     categories:
       - *cloud
     softwares:
@@ -99,12 +100,14 @@ skills:
     categories:
       - *cloud
     summary: |
-      I'm use to design, deploy, and manage cloud infrastructure on different
-      cloud providers such as OpenStack, AWS, GCP or Scaleway.
+      Je suis habitué à concevoir, déployer et gérer des infrastructure cloud
+      chez different fournisseur d'infrastructure cloud comme OpenStack, AWS,
+      GCP, Scaleway ou Outscale.
 
-      Adept of the in Infrastructure as Codel tools (such as OpenTofu,
-      Terraform), I can ensure deployment of scalable, high-availability
-      environments with cloud security best practices and cost optimization.
+      Adepte des outils d'Infrastructure as Code (IaC), comme OpenTof ou
+      Terraform, Je peux assurer le déploiement d'infrastructure cloud en haute
+      disponibilité, capable de passer à l'echelle, sécurisé et avec une gestion
+      des coûts liée à l'infrastructure.
     softwares:
       - name: Openstack
         logo: /images/sections/skills/openstack.png
@@ -120,11 +123,14 @@ skills:
   - name: Containers
     logo: /images/sections/skills/oci.jpg
     summary: |
-      Write most of the programs as OCI container to be run for Container
-      Runtime Interface such as Docker or ContainerD.
+      Je suis capable de créer des container OCI pour deployer des programs
+      exécutés par des "Container Runtime Interfaces" (CRI) telle que Docker ou
+      ContainerD.
 
-      Experienced with multi-stage, multi-arch build process and optimization of
-      image to reduce size and manage cost efficiently.
+      Je suis aussi expérimenté dans la création d'images "multi-stage" pour
+      différentes architecture matérielle tout en étant construite de manière
+      optimiser pour réduire la taille des images et gérer de manière efficace
+      les couts de stockage des images.
     categories:
       - *cloud
     softwares:
@@ -136,13 +142,14 @@ skills:
   - name: Git
     logo: /images/sections/skills/git.png
     summary: |
-      Experienced with git-based development.
+      Chevronné dans le développement basé sur Git.
 
-      Use mainly Gitlab and Github with their collaborations tools such as
-      issues, pull requests or merge requests, CI services, etc.
+      J'utilise principalement Gitlab et Github pour leur outils de travail
+      collaboratif comme la gestion des tickets, des propositions de codes
+      (PR ou MR) ains que leur service de CI/CD.
 
-      Also experienced in administration of github organization and gitlab
-      instance administration.
+      Je suis aussi expérimenté dans l'administration d'organisation github et
+      dans l'administration d'instance Gitlab.
     categories:
       - *basic
     softwares:
@@ -151,14 +158,14 @@ skills:
       - name: Github
         logo: /images/sections/skills/github.png
 
-  - name: Shell Scripting
+  - name: Script Shell
     logo: /images/sections/skills/bash.png
     summary: |-
-      Development of advanced scripts to:
+      Habitué à développer des scripts avancés pour :
 
-      * Automate almost everything I do in my terminals
-      * Install software and configuration
-      * Develop programs when no other languages are allowed.
+      * l'automatisation presque tout ce que j'effectue dans mon terminal,
+      * l'installation et la configuration logiciel,
+      * le développement d'outils lorsque qu'aucun autre langage n'est possible.
     categories:
       - *basic
       - *language
@@ -171,12 +178,13 @@ skills:
   - name: Python
     logo: /images/sections/skills/python.png
     summary: |-
-      One of my favorite programming languages.
+      Un de mes langages de programmation favoris.
 
-      Used to develop scripts and programs capable of scaling, testable,
-      maintenable and documented.
+      Je l'utilise pour développer des scripts et programmes capable de passer
+      à l'echelle, testé, facilement maintenable et documenté.
 
-      I'm also able to package code into applications for multiple OS.
+      Je suis en capacité d'en créer des applications sous forme de paquets
+      pour différents Système d'Exploitation.
     categories:
       - *language
     softwares:
@@ -188,12 +196,12 @@ skills:
   - name: Javascript
     logo: /images/sections/skills/javascript.png
     summary: |-
-      Good knowledge in Javascript mainly to develop scripts used to
-      augment usage of documentation tools such as
-      [Docusaurus](https://docusaurus.io/) or to automate release of git
-      repository.
+      Bonne connaissances en Javascript, je suis capable de développer des
+      applications micro-services pour des déploiements dans des environnements
+      cloud.
 
-      I'm also able to develop micro-service for a cloud oriented applications.
+      Je suis aussi capable d'utiliser ce langage pour amélioer l'utilisation
+      d'outil de documentation comme [Docusaurus](https://docusaurus.io/).
     categories:
       - *language
     softwares:
@@ -207,9 +215,9 @@ skills:
   - name: HTML-CSS
     logo: /images/sections/skills/html_css.png
     summary: |-
-      Basic knowledge in HTML/CSS, enough to customize a static site
-      rendering, e.g. for documentation or for this website/resume you are
-      currently viewing.
+      Connaissances basique en HTML/CSS, principalement pour la personnalisation
+      de rendu de site statique, e.g. pour de la documentation ou ce site web/CV
+      que vous êtes actuellement en train de consulter.
     categories:
       - *language
     softwares:
@@ -221,28 +229,28 @@ skills:
   - name: LaTeX
     logo: /images/sections/skills/latex.png
     summary: |-
-      Main language used to write documents which will be printed or
-      shared in PDF format.
+      Principal langage que j'utilise pour la rédaction de documents qui doivent
+      être imprimés ou partagé au format PDF.
 
-      Use of custom latex class documents, for instance to render my
-      resume in PDF.
+      Je peut aussi créer des classes personnalisées, comme par exemple la
+      classe utilisée pour le rendu de mon CV.
     categories:
       - *basic
 
   - name: C++
     logo: /images/sections/skills/cpp.png
     summary: |-
-      Good knowledge in C/C++ development, mainly used during my PhD for
-      the development of mining algorithms.
-
+      Bonne connaissances en C/C++, principalement utilisé durant ma thèse pour
+      le développement d'algorithmes de fouille.
   - name: CI-CD
     logo: /images/sections/skills/ci-cd.png
     summary: |-
-      Use of continuous integration and continuous deployment tools to:
+      Adepte de l'utilisation d'outil d'intégration et de déploiements continue
+      tels que Gitlab CI, Github Workflow ou encore ArgoCD pour :
 
-        * Ensure validity of test suite before deployment,
-        * Automate infrastructures deployment and provisionning in the cloud,
-        * Automate deployment of online documentation.
+        * Assurer la validité des suites de tests avant déploiement,
+        * Automatisation de provisionnement et déploiment d'infrastructure,
+        * Automatisation de déploiement de documentation en ligne.
     categories:
       - *sre
     softwares:
@@ -256,12 +264,13 @@ skills:
   - name: Monitoring
     logo: /images/sections/skills/monitoring.png
     summary: |-
-      I am able to deploy and configure monitoring tools to ensure observability,
-      stability, tracability and alerting for services.
+      Je suis capable de déployer et configurer des outils de monitoring pour
+      assurer l'observabilité, le passage à l'echelle, la tracabilité et la
+      notification d'incident de service.
 
-      Monitoring tools I know range from the export and virtualization of
-      metrics (Grafana, Prometheus,...) to the export, aggregation,
-      sorting and visualization of log (rsyslog, Loki...)
+      Les outils de monitoring vont de l'export et la visualisation de metrics
+      (Mimir, Prometheus, Grafana) à l'export, l'aggregation, l'indexation et la
+      visualisation de journaux (rsyslog, loki)
     categories:
       - *sre
     softwares:
@@ -279,16 +288,20 @@ skills:
   - name: Infrastructure as Code
     logo: /images/sections/skills/iac.png
     summary: |-
-      Adept of GitOps methodology, I developped strong knowledge about
-      Infrastructure as Code to deploy resources such as Cloud Infrastructure
-      but also Github or Gitlab repository and teams, etc.
+      Amoureux de la méthodolgie GitOps, j'ai développé de forte connaissances
+      en Infrastructure as Code (IaC) dans le déploiement de ressources telle
+      que des infrastructures cloud mais aussi dans la gestion de resources
+      Github ou Gitlab telles que les dépots de codes, la gestion des membres
+      et des équipes.
 
-      Over the time, I used multiple different IaC tools such as OpenTofu,
-      Terraform for resources deployment, Ansible for provisionning or NixOS to
-      deploy Linux OS.
+      Avec le temps, j'ai été amené à utiliser différents outils d'IaC
+      comme OpenTofu ou Terraform pour le déploiement de ressources Cloud,
+      Ansible pour le provisionnement ou encore NixOS pour le déploiement de
+      Linux.
 
-      Use of such tools allow to ensure stability, scalability and automated
-      management of deployed resources.
+      L'utilisation de ces outils me permet ainsi d'assurer la stabilité,
+      la scalabilité et la traçabilité de la gestion automatique des ressources
+      déployées.
     categories:
       - *sre
       - *cloud
@@ -309,12 +322,12 @@ skills:
   - name: Database Management
     logo: /images/sections/skills/db.png
     summary: |-
-      Over the time, I developped knowledge about Database management, such as
-      deployement of High availability DB instances and permission management.
+      Avec le temps, j'ai développé des connaissances concernant la gestion des
+      bases de données tel que le déploiement d'instances à haute disponibilité
+      ou la gestion des accès et permissions.
 
-      I'm able to deploy and manage DB as Saas or self-hosted in kubernetes
-      environnements.
-
+      Je suis à même de déployer et gérer des bases de données via SaaS ou
+      auto-hébergé dans des environnements Kubernetes.
     categories:
       - *sre
       - *cloud
@@ -330,11 +343,14 @@ skills:
   - name: Identity Access Management
     logo: /images/sections/skills/iam.png
     summary: |-
-      I'm able to setup secured Identity Access Management ensuring Zero Trust
-      and Least Privileged policy for either users or services accounts.
+      Je suis capable d'installer des outils de gestion d'identité et d'accès
+      pour s'assurer d'une politique "Zero Trust" et du moindre privilège, aussi
+      bien pour les utilisateurs ou utilisatrices, que pour des comptes de
+      services.
 
-      This can be achieved using multiple self-hosted solution such as AuthentiK
-      or SaaS solution such as Cloud Provider IAM services.
+      Pour cela, il est possible d'utiliser des outils auto-hébergé comme
+      AuthentiK ou Keycloak, ou encore des outils SaaS tels que les services IAM
+      proposé par les fournisseurs de services Cloud.
     categories:
       - *sre
       - *cloud
@@ -351,11 +367,12 @@ skills:
   - name: Knowledge Management
     logo: /images/sections/skills/knowledge-management.png
     summary: |-
-      Adept of documentation writing, there is no such this like a well written
-      `README`.
+      Adepte de la rédaction de document, il n'y a rien de tel qu'un `README`
+      bien rédigé.
 
-      I'm prone to maintain documentation to ensure knwoledge transmission as
-      much as I can using different tools depending on the needs.
+      Je suis prompt à maintenir de la documentation pour assurer le transfert
+      de connaissances autant que possible au travers de différents outils
+      suivant les besoins
     softwares:
       - name: Docusaurus
         logo: /images/sections/skills/docusaurus.png

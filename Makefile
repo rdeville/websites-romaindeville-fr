@@ -1,36 +1,57 @@
-BUILD_DIR := ./dist
+BUILD := public/
 STATIC := static/files/resume
-STATIC_FR := $(STATIC)/fr_FR
-STATIC_EN := $(STATIC)/en_US
+RESUME := resume
+FR := fr_FR
+EN := en_US
 
-all: build
+TEX_CMD := xelatex
+SRCS = main-clr.tex main-bw.tex main-ats.tex
 
-.PHONY: build
-build: build-latex build-hugo
+all: pdf html
 
-build-latex: build-latex-fr build-latex-en
+pdf: pdf-fr pdf-en
 
-build-latex-fr:
-	if ! [[ -d $(STATIC_FR) ]]; then mkdir -p $(STATIC_FR); fi
-	cd resume/fr_FR && lualatex main.tex && cd ../../
-	pdftk resume/fr_FR/main.pdf cat 1-r2 output $(STATIC_FR)/rdeville-devops-cloud-fr.pdf
-	cd resume/fr_FR && lualatex main-bw.tex && cd ../../
-	pdftk resume/fr_FR/main-bw.pdf cat 1-r2 output $(STATIC_FR)/rdeville-devops-cloud-fr-bw.pdf
-	cd resume/fr_FR && lualatex main_ats.tex && cd ../../
-	cp resume/fr_FR/main_ats.pdf $(STATIC_FR)/rdeville-devops-cloud-ats-fr.pdf
+pdf-fr: latex-fr
+	./scripts/compress_pdf.sh $(RESUME)/$(FR)/main-clr.pdf $(STATIC)/$(FR)/rdeville-devops-cloud-fr-clr.pdf
+	./scripts/compress_pdf.sh $(RESUME)/$(FR)/main-bw.pdf $(STATIC)/$(FR)/rdeville-devops-cloud-fr-bw.pdf
+	cp $(RESUME)/$(FR)/main-ats.pdf $(STATIC)/$(FR)/rdeville-devops-cloud-fr-ats.pdf
 
-build-latex-en:
-	if ! [[ -d $(STATIC_EN) ]]; then mkdir -p $(STATIC_EN); fi
-	cd resume/en_US && lualatex main.tex && cd ../../
-	pdftk resume/en_US/main.pdf cat 1-r2 output $(STATIC_EN)/rdeville-devops-cloud-en.pdf
-	cd resume/en_US && lualatex main-bw.tex && cd ../../
-	pdftk resume/en_US/main-bw.pdf cat 1-r2 output $(STATIC_EN)/rdeville-devops-cloud-en-bw.pdf
-	cd resume/en_US && lualatex main_ats.tex && cd ../../
-	cp resume/en_US/main_ats.pdf $(STATIC_EN)/rdeville-devops-cloud-ats-en.pdf
+.ONESHELL:
+latex-fr:
+	@cd $(RESUME)/$(FR)
+	$(TEX_CMD) main-clr.tex
+	$(TEX_CMD) main-bw.tex
+	$(TEX_CMD) main-ats.tex
 
+pdf-en: latex-en
+	./scripts/compress_pdf.sh $(RESUME)/$(EN)/main-clr.pdf $(STATIC)/$(EN)/rdeville-devops-cloud-en-clr.pdf
+	./scripts/compress_pdf.sh $(RESUME)/$(EN)/main-bw.pdf $(STATIC)/$(EN)/rdeville-devops-cloud-en-bw.pdf
+	cp $(RESUME)/$(EN)/main-ats.pdf $(STATIC)/$(EN)/rdeville-devops-cloud-en-ats.pdf
 
-build-hugo:
+.ONESHELL:
+latex-en:
+	@cd $(RESUME)/$(EN)
+	$(TEX_CMD) main-clr.tex
+	$(TEX_CMD) main-bw.tex
+	$(TEX_CMD) main-ats.tex
+
+html:
 	hugo build
 
 serve:
 	hugo serve -w
+
+clean: pdf-clean html-clean
+
+pdf-clean: pdf-clean-en pdf-clean-fr
+
+pdf-clean-fr:
+	cd $(RESUME)/$(FR)
+	rm -f *.log *.aux *.out
+
+pdf-clean-en:
+	cd $(RESUME)/$(EN)
+	rm -f *.log *.aux *.out
+
+html-clean:
+	rm -rf $(BUILD)

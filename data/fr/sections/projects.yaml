@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Projects
+  name: Projets
   id: projects
   enable: true
   weight: 5
@@ -29,7 +29,7 @@ projects:
     timeline: "2024 - Present"
     repo: https://framagit.org/rdeville-public/opentofu/github-user
     summary: |
-      Opentofu module to manage github user.
+      Module Opentofu pour gérer les comptes individuel Github.
     tags:
       - *iac
       - &opentofu opentofu
@@ -41,7 +41,7 @@ projects:
     timeline: "2024 - Present"
     repo: https://framagit.org/rdeville-public/opentofu/github-team
     summary: |
-      Opentofu module to manage github team.
+      Module Opentofu pour gérer les équipes Github.
     tags:
       - *iac
       - *opentofu
@@ -53,7 +53,7 @@ projects:
     timeline: "2024 - Present"
     repo: https://framagit.org/rdeville-public/opentofu/github-organization
     summary: |
-      Opentofu module to manage github organization.
+      Module Opentofu pour gérer une organisation Github.
     tags:
       - *iac
       - *opentofu
@@ -65,7 +65,7 @@ projects:
     timeline: "2024 - Present"
     repo: https://framagit.org/rdeville-public/opentofu/github-repository
     summary: |
-      Opentofu module to manage github repository.
+      Module Opentofu pour gérer un repertoire de code Github.
     tags:
       - *iac
       - *opentofu
@@ -77,7 +77,7 @@ projects:
     timeline: "2024 - Present"
     repo: https://framagit.org/rdeville-public/opentofu/gitlab-user
     summary: |
-      Opentofu module to manage gitlab user.
+      Module Opentofu pour gérer les comptes individuel Gitlab.
     tags:
       - *iac
       - &opentofu opentofu
@@ -89,7 +89,7 @@ projects:
     timeline: "2024 - Present"
     repo: https://framagit.org/rdeville-public/opentofu/gitlab-group
     summary: |
-      Opentofu module to manage gitlab group.
+      Module Opentofu pour gérer les groupes Gitlab.
     tags:
       - *iac
       - *opentofu
@@ -101,7 +101,7 @@ projects:
     timeline: "2024 - Present"
     repo: https://framagit.org/rdeville-public/opentofu/gitlab-repository
     summary: |
-      Opentofu module to manage gitlab repository.
+      Module Opentofu pour gérer des repertoires de code Gitlab.
     tags:
       - *iac
       - *opentofu
@@ -125,7 +125,7 @@ projects:
     timeline: "2020 - Present"
     repo: https://framagit.org/rdeville-public/dotfiles/awesomewm
     summary: |
-      Configuration files for my AwesomeWM tiling window manager.
+      Fichier de configuration pour le "Tiling Window Manager" AwesomeWM.
     tags:
       - *dotfiles
       - &lua lua
@@ -138,8 +138,8 @@ projects:
     timeline: "2024 - Present"
     repo: https://framagit.org/rdeville-public/dotfiles/neovim
     summary: |
-      Configuration file for my neovim text editor to convert it into a
-      full-featured IDE.
+      Fichier de configuration pour mon éditeur de text NeovIm et le transformer
+      en un IDE complet.
     tags:
       - *dotfiles
       - *lua
@@ -151,7 +151,8 @@ projects:
     timeline: "2024 - Present"
     repo: https://framagit.org/rdeville-public/dotfiles/direnv
     summary: |
-      Configuration files to ease my management of my directory environment.
+      Fichier de configuration pour faciliter la gestion automatique
+      d'environnement par dossier.
     tags:
       - *dotfiles
       - &bash bash
@@ -163,7 +164,7 @@ projects:
     timeline: "2022 - Present"
     repo: https://framagit.org/rdeville-public/dotfiles/tmux
     summary: |
-      Configuration files for my tmux.
+      Fichier de configuration pour Tmux.
     tags:
       - *dotfiles
       - *bash
@@ -175,7 +176,8 @@ projects:
     timeline: "2024 - Present"
     repo: https://framagit.org/rdeville-public/dotfiles/nixos-config
     summary: |
-      My public NixOS configuration used to setup my computers.
+      Module de configuration NixOS public pour la configuration de mes
+      ordinateurs, serveur ou routeur.
     tags:
       - *dotfiles
       - nix
@@ -187,7 +189,8 @@ projects:
     timeline: "2024 - Present"
     repo: https://framagit.org/rdeville-public/programs/dotgit-sync
     summary: |
-      Tool to sync configurations between git repos.
+      Outil de synchronisation de fichier de configuration entre plusieurs
+      dépot de code Git.
     tags:
       - *programs
       - &python python
@@ -200,7 +203,8 @@ projects:
     timeline: "2024 - Present"
     repo: https://framagit.org/rdeville-public/programs/dotgit-sync-templates
     summary: |
-      Templates used combined with my program dotgit-sync.
+      Template de fichier de configuration combinés à l'utilisation de mon
+      program dotgit-sync.
     tags:
       - *programs
       - *python
@@ -209,11 +213,12 @@ projects:
   - name: Dynamic Prompt
     logo: /images/sections/projects/programs-dynamic-prompt.png
     role: Maintainer
-    timeline: "2020 - Present"
+    timeline: "2020 - 2024 (archivé)"
     repo: https://framagit.org/rdeville-public/programs/dynamic-prompt
     summary: |
-      Set of scripts to render a dynamic prompt showing environment
-      information, support bash and zsh.
+      Ensemble de scripts pour un rendu dynamique de mon prompt permettant
+      d'afficher des informations concernant l'environment configuré, supporte
+      bash et zsh.
     tags:
       - *programs
       - *bash
@@ -223,10 +228,11 @@ projects:
   - name: Resume Builder
     logo: /images/sections/projects/programs-resume-builder.png
     role: Maintainer
-    timeline: "2020 - Present"
+    timeline: "2020 - 2024 (archivé)"
     repo: https://framagit.org/rdeville-public/programs/resume-builder
     summary: |
-      Program to render a website and a PDF resume from a YAML data file.
+      Programme de génération de CV sous forme d'un site web et d'un PDF à
+      partir d'un fichier de configuration YAML.
     tags:
       - *programs
       - *websites
@@ -237,10 +243,11 @@ projects:
   - name: romaindeville.fr
     logo: /images/sections/projects/websites-romaindeville-fr.png
     role: Maintainer
-    timeline: "2020 - Present"
+    timeline: "2024 - Present"
     repo: https://framagit.org/rdeville-public/websites/romaindeville-fr
     summary: |
-      Program to render a website and a PDF resume from a YAML data file.
+      Repertoire de configuration pour le rendu de mon CV sous forme de site web
+      et en PDF basé sur LaTeX et Hugo.
     tags:
       - *websites
       - *python
@@ -249,10 +256,12 @@ projects:
   - name: 2022 ExpeNum
     logo: /images/sections/projects/documents-2022-expenum.png
     role: Maintainer
-    timeline: "2022"
+    timeline: "2022 (archivé)"
     repo: https://framagit.org/rdeville-public/documents/expenum-2020-02
     summary: |
-      Slide used during ExpeNums at the MPT. Internet: machines, cats and humans.
+      Diapositive utilisée dans le cadre de la conférence "Internet: des
+      machines, des humains et des chats" durant les ExpeNums à la Maison Pour
+      Tous, Salle des Rancy.
     tags:
       - *documents
       - *latex
