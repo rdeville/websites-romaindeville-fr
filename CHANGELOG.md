@@ -1,6 +1,15 @@
 <!-- markdownlint-disable-file -->
 # CHANGELOG
 
+## v0.1.2 (2025-08-16)
+
+### 🩹 Patch
+
+  * 🍱(statics/file): Update renderer PDF by Romain Deville ([`9a70598`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/9a7059839ec8175508f5dd39dd8f7625df2f60b0)) 🔏
+  * 🔧(resume): Fix header height and alignment in PDF resume (!5) by Romain Deville ([`7f5d97e`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/7f5d97e018b377d9b586b182b2785cc3232bcddb))
+  * 🔧(resume/fr): Fix header height and alignment by Romain Deville ([`901b018`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/901b018bc9cf6a19e4d2f2d0ded7b9333081ed0e)) 🔏
+  * 🔧(resume/en): Fix header height by Romain Deville ([`09107ec`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/09107ec5506f773164027fbe0f2253e16c5ce5e1)) 🔏
+
 ## v0.1.1 (2025-08-16)
 
 ### 🩹 Patch
