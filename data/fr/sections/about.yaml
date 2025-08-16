@@ -11,15 +11,15 @@ designation: DevOps / SRE
 #   url: "https://www.dougs.fr"
 
 summary: |-
-  Passionné, je me suis spécialisé dans l'administration, l'automatisation et
-  l'Observabilité de plateforme.
+  Passionné, quelque peu étrange, vivant dans le terminal, je me suis spécialisé
+  dans l'administration, l'automatisation et l'observabilité de plateforme cloud.
 
   J'apprecie de travailler avec des outils relatif à l'IaC et l'automaitisation
   au travers d'une approche GitOps, permettant la tracabilité de l'évolution des
   déploiement ainsi que le passage à l'échelle ou encore leur reconciliation
   si des dérives apparaissent.
 
-    Je suis aussi très attaché à mes investissements associatifs, à la sécurité
+  Je suis aussi très attaché à mes investissements associatifs, à la sécurité
   et à la protection des données privées.
 
 socialLinks:
@@ -43,22 +43,22 @@ socialLinks:
 # For example, you can put link for your resume.
 resourceLinks:
   - title: "FR-Color"
-    url: files/resume/fr_FR/rdeville-devops-cloud-fr.pdf
+    url: files/resume/fr_FR/rdeville-devops-cloud-fr-clr.pdf
     logo: "/images/flags/fr.png"
   - title: "FR-Black & White"
     url: files/resume/fr_FR/rdeville-devops-cloud-fr-bw.pdf
     logo: "/images/flags/fr.png"
   - title: "FR-ATS Ready"
-    url: files/resume/fr_FR/rdeville-devops-cloud-ats-fr.pdf
+    url: files/resume/fr_FR/rdeville-devops-cloud-fr-ats.pdf
     logo: "/images/flags/fr.png"
   - title: "EN-Color"
-    url: files/resume/en_US/rdeville-devops-cloud-en.pdf
+    url: files/resume/en_US/rdeville-devops-cloud-en-clr.pdf
     logo: "/images/flags/us.png"
   - title: "EN-Black & White"
     url: files/resume/en_US/rdeville-devops-cloud-en-bw.pdf
     logo: "/images/flags/us.png"
   - title: "EN-ATS Ready"
-    url: files/resume/en_US/rdeville-devops-cloud-ats-en.pdf
+    url: files/resume/en_US/rdeville-devops-cloud-en-ats.pdf
     logo: "/images/flags/us.png"
 
 # Show your badges

@@ -9,14 +9,16 @@ section:
 
 interests:
   - name: Photography
-    desc: Practice of film, digital and polaroid photography.
+    desc: Pratique de la photographie argentique, numérique et polaroid.
     logo: /images/sections/interests/photography.png
   - name: Bicycle
-    desc: Bike customization and main means of transport.
+    desc: Personnalisation de vélo et principal moyen de transport.
     logo: /images/sections/interests/bicycle.png
   - name: Self-Hosting
-    desc: Self-hosting my own emails and online storage since 2016.
+    desc: |-
+      Hébergement mails et stockage depuis 2016. Déploiement de clusters
+      kubernetes bare metal privés en cours.
     logo: /images/sections/interests/selfhosting.png
   - name: DIY
-    desc: Fabrication, CAD, 3D printing, laser cutting,...
+    desc: Fabrication, CAO, impression 3D, découpe laser...
     logo: /images/sections/interests/diy.png

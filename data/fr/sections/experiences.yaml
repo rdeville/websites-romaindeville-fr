@@ -28,7 +28,7 @@ experiences:
       - designation: Lead DevOps / SRE
         start: 2024-10-17
         end: 2025-06-13
-        duration: 7 months
+        duration: 7 mois
         overview: |-
           ##### Description {.subtitle}
 
@@ -76,7 +76,7 @@ experiences:
       - designation: DevOps - SRE
         start: 2024-02-05
         end: 2024-10-17
-        duration: 8 months
+        duration: 8 mois
         overview: |-
           ##### Description {.subtitle}
 
@@ -183,7 +183,7 @@ experiences:
           - Prometheus
 
   - company:
-      name: LIRIS (UMR 5205)
+      name: LIRIS (UMR 5205), CNRS
       logo: /images/sections/experiences/liris.png
       url: https://liris.cnrs.fr
       duration : 6 ans & 9 mois
