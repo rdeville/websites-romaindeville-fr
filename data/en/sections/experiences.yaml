@@ -43,14 +43,14 @@ experiences:
           In addition to DevOps/SRE activities, my main responsibilities
           included:
 
-          * **In charge of the supervision and administration** of
+          * Being **In charge of the supervision and administration** of
             infrastructure, Kubernetes clusters, and access.
           * **Planning team roadmaps** in collaboration with the CISO, the
             architect, and the CIO.
-          * Monitoring Computer Security controls in an **ISO 27001 and
+          * Monitoring security related controls in an **ISO 27001 and
             SecNumCloud** context.
-          * **Monitoring** information systems and, where necessary, **resolving
-          incidents**.
+          * **Monitoring** information systems and, when necessary, **resolving
+            incidents**.
           * **Recruiting, supporting, and training** team members.
 
         softwares: &dougs-soft
@@ -87,11 +87,11 @@ experiences:
           ensuring its proper functioning and scalability during increased
           loads.
 
-          Additionally, during 2024, we have:
+          Additionally, during 2024, we had:
 
-          * **Migrate the Kubernetes deployment** from Kustomize to Helm
-          * **Import** the majority of infrastructure resources into Terraform
-          * Deploy a new application in an **ISO 27001 context and in a
+          * **Migrated the Kubernetes deployment** from Kustomize to Helm
+          * **Imported** the majority of infrastructure resources into Terraform
+          * Deployed a new application in an **ISO 27001 context and in a
             SecNumCloud** environment.
 
           #### Responsibilities {.subtitle}
@@ -113,7 +113,7 @@ experiences:
 
           Alongside these activities, I trained my colleagues in the use of
           Terraform and introduced DevX tools, such as
-          [Direnv](https://direnv.net) ou [Devbox](https://www.jetify.com/devbox).
+          [Direnv](https://direnv.net) or [Devbox](https://www.jetify.com/devbox).
 
         softwares: *dougs-soft
 
@@ -144,7 +144,7 @@ experiences:
 
           #### Responsibilities {.subtitle}
 
-          My main activities are:
+          My main activities were:
 
             * **Identification** of tasks which can be automated,
             * **Design and development** of solutions allowing the
@@ -152,14 +152,14 @@ experiences:
             * **Documentation** of the automated procedure to be handled by
               other teams.
 
-          In parallel with these activities, I am also occasionally required to
+          In parallel with these activities, I was also occasionally required to
           support the other teams on the following tasks:
 
             * **Design and deployment** of Public Cloud infrastructure (AWS,
               Scaleway, Azure) with IaC technologies (Infrastructure as Code),
             * **Administration of Kubernetes clusters** and of application
               deployment in these clusters,
-            * **Monitoring informations systems** with tools such as Prometheus,
+            * **Monitoring information systems** with tools such as Prometheus,
               Mimir, Loki, Grafana,
             * Containerization of client application, implementation of **CI/CD
               with GitOps tools**,
@@ -310,7 +310,7 @@ experiences:
 
           ##### Responsibilities {.subtitle}
 
-          The main activities I had were:
+          My main activities were:
 
             * __Development__ of tools and algorithm to perform grid mining,
               which is a subset of graph mining,

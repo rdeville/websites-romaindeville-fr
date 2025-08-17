@@ -29,14 +29,14 @@ skills:
     logo: /images/sections/skills/linux.png
     pdf_desc: Ubuntu, Debian, Arch, Centos,...
     summary: |-
-      Operating system that I use the vast majority of the time, I usually
-      use several different distributions (Ubuntu, Debian, Arch, Centos,
+      Operating system that I use the vast majority of the time, I usually use
+      several different distributions (Ubuntu, Debian, Arch, CentOS and
       Raspbian).
 
-      Over time, I deepened my knowledge in system administration mainly
-      around Linux distributions.
+      Over time, I deepened my knowledge in system administration mainly around
+      Linux distributions.
 
-      Currently, I'm migrating most of my personal infrastructure under NixOS,
+      Currently, I’m migrating most of my personal infrastructure under NixOS,
       an immutable OS based on the functional language Nix.
     categories:
       - *basic
@@ -81,10 +81,10 @@ skills:
   - name: Kubernetes
     logo: /images/sections/skills/kubernetes.png
     summary: |
-      As Kubernetes Administrator, I developed an strong competences in deploying,
+      As a Kubernetes Administrator, I developed strong competencies in deploying,
       managing, and maintaining Kubernetes clusters in production environments.
 
-      I'm proficient in container orchestration, infrastructure automation, and
+      I'm proficient in container orchestration, infrastructure automation and
       CI/CD integration to ensure high availability, scalability, and performance
       of applications.
     categories:
@@ -100,10 +100,10 @@ skills:
     categories:
       - *cloud
     summary: |
-      I'm use to design, deploy, and manage cloud infrastructure on different
+      I'm used to design, deploy, and manage cloud infrastructure on different
       cloud providers such as OpenStack, AWS, GCP, Scaleway or Outscale.
 
-      Adept of the in Infrastructure as Code tools, such as OpenTofu,
+      Adept of the Infrastructure as Code tools, such as OpenTofu,
       Terraform, I can ensure deployment of scalable, high-availability
       environments with cloud security best practices and cost optimization.
     softwares:
@@ -121,11 +121,11 @@ skills:
   - name: Containers
     logo: /images/sections/skills/oci.jpg
     summary: |
-      I'm able to write declaration of OCI container for programs to be run by
+      I'm able to write declarations of OCI container for programs to be run by
       Container Runtime Interface such as Docker or ContainerD.
 
-      Experienced with multi-stage, multi-arch build process and optimization of
-      image to reduce size and manage cost efficiently.
+      Experienced with multi-stage, multi-arch build and optimization of
+      images to reduce size and manage costs efficiently.
     categories:
       - *cloud
     softwares:
