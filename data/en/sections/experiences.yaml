@@ -288,9 +288,9 @@ experiences:
           - Python
 
       - designation: PhD Candidate
-        start: 2014-03-01
+        start: 2014-09-01
         end: 2018-08-31
-        duration: 4 years & 5 months
+        duration: 4 years
         overview: |-
           ##### Description {.subtitle}
 
@@ -327,6 +327,36 @@ experiences:
           - name: Bash
             section: Bash
             logo: /images/sections/skills/bash.png
+          - name: LaTeX
+            logo: /images/sections/skills/latex.png
+            section: Latex
+
+      - designation: Internship
+        subdesignation: Final year project
+        start: 2014-09-01
+        end: 2014-08-31
+        duration: 6 months
+        overview: |-
+          ##### Description {.subtitle}
+
+          Preparation of a **research project** associated to **ANR SoLSTiCE**
+          to continue as PhD candidate.
+
+          ##### Responsibilities {.subtitle}
+
+          My main activities were:
+
+          * **Prototyping and development** of tools and mining algorithm,
+          * **Planification** of experiments,
+          * **Reading and analysis** of many research papers on the subject,
+          * **Autonomous work**
+        softwares:
+          - Bash
+        skills:
+          - name: C++
+            logo: /images/sections/skills/cpp.png
+          - name: Octave / Matlab
+            logo: /images/sections/skills/octave.png
           - name: LaTeX
             logo: /images/sections/skills/latex.png
             section: Latex
