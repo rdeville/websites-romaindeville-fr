@@ -1,6 +1,17 @@
 <!-- markdownlint-disable-file -->
 # CHANGELOG
 
+## v0.1.4 (2025-08-21)
+
+### 🩹 Patch
+
+  * ✏️ Mainly fix typos on dates and missing experiences (!7) by Romain Deville ([`d13253a`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/d13253a8631b20b57f226c78135e94c72bf17dcb))
+  * ✏️(resume/fr): Fix minor typos by Romain Deville ([`44df044`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/44df0449c643a0114f08a81c16df699c0f7d4811)) 🔏
+  * ✏️(resume/en): Fix minors typos by Romain Deville ([`fcc90d5`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/fcc90d5c0ed48d5445c35582f6c6f46912250963)) 🔏
+  * 🍱(static/files): Update rendered PDF resume by Romain Deville ([`bd192e3`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/bd192e37c4458079b8ac987670bfe3e61ef2e76c)) 🔏
+  * 🔧(data/fr): Fix date in liris experiences by Romain Deville ([`6b7acdf`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/6b7acdf5faf7418e7c693d5e68b7161eae5de069)) 🔏
+  * 🔧(data/en): Fix date and add final internship by Romain Deville ([`10a920a`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/10a920acc1fe5109fbf306af0e7696e0ff04be0f)) 🔏
+
 ## v0.1.3 (2025-08-17)
 
 ### 🩹 Patch
