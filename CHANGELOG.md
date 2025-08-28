@@ -1,6 +1,15 @@
 <!-- markdownlint-disable-file -->
 # CHANGELOG
 
+## v0.1.5 (2025-08-28)
+
+### 🩹 Patch
+
+  * 🍱(static/files/resume): Update rendered PDF due to typo fixes by Romain Deville ([`b0af416`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/b0af416885db54638e075b6d129fd38d863b0578)) 🔏
+  * 🔧 Update jobs position with typos (!8) by Romain Deville ([`a3b8874`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/a3b887428f6efe2a28e1dc17b4e1de4570c15a63))
+  * 🔧(resume/en): Fix typos in job designation for LIRIS and Skyloud by Romain Deville ([`ab6c195`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/ab6c1953a880ab56196eb6ac4fd081feae3894e3)) 🔏
+  * 🔧(data/en): Fix typos in job designation in LIRIS by Romain Deville ([`be0b12c`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/be0b12caee74cd03592af5020acd29cdacddd627)) 🔏
+
 ## v0.1.4 (2025-08-21)
 
 ### 🩹 Patch
