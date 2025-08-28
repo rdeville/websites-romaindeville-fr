@@ -1,6 +1,14 @@
 <!-- markdownlint-disable-file -->
 # CHANGELOG
 
+## v0.1.6 (2025-08-28)
+
+### 🩹 Patch
+
+  * 🍱(assets/images): Update website logo and add svg version (!9) by Romain Deville ([`17ededc`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/17ededc5e545c4c1e4980a20fde7df3ae8f331ea))
+  * 🍱(assets/images): Add black and white version of previously updated logo by Romain Deville ([`d774486`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/d7744862e6e5bffbb83ef05b6026913a200464f8)) 🔏
+  * 🍱(assets/images): Update website logo and add svg version by Romain Deville ([`c38ee40`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/c38ee40f2aff5a22c6eaad36b78586b2d38ca17e)) 🔏
+
 ## v0.1.5 (2025-08-28)
 
 ### 🩹 Patch
