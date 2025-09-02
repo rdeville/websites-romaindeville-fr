@@ -1,6 +1,14 @@
 <!-- markdownlint-disable-file -->
 # CHANGELOG
 
+## v0.1.7 (2025-09-02)
+
+### 🩹 Patch
+
+  * ✏️(resume): Fix minor typos in header and experiences (!10) by Romain Deville ([`2646d8d`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/2646d8d35925a4d56a0d2e747f73509cd4a89cae))
+  * ✏️(resume): Fix typos in Header and minor update in resume (en and fr) by Romain Deville ([`c0a3f5a`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/c0a3f5a35ed02dde0c14dbabf41edc527f39da70)) 🔏
+  * 🍱(static): Update rendered PDF by Romain Deville ([`fe9450e`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/fe9450e51edbc6c3cb449763a87f961411f6d2fa)) 🔏
+
 ## v0.1.6 (2025-08-28)
 
 ### 🩹 Patch
