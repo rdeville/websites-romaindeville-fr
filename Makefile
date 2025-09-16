@@ -7,7 +7,11 @@ EN := en_US
 TEX_CMD := xelatex
 SRCS = main-clr.tex main-bw.tex main-ats.tex
 
-all: pdf html
+all: pdf html deploy
+
+.ONESHELL:
+deploy:
+	rsync -avz public ${USER}@romaindeville.fr:/home/${USER}/
 
 pdf: pdf-fr pdf-en
 
