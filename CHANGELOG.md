@@ -1,6 +1,19 @@
 <!-- markdownlint-disable-file -->
 # CHANGELOG
 
+## v0.1.8 (2025-09-16)
+
+### 🩹 Patch
+
+  * 🔧 Add my title Dr. to my name (!11) by Romain Deville ([`b9d367e`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/b9d367e3a2553549309e5bbf389a620dea283f89))
+  * 🔧(static): Update rendered PDF by Romain Deville ([`09777e5`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/09777e5ad6731ef909bae5ca9b29dd43c0996bac)) 🔏
+  * 🔧(resume): Add Dr. title to my name by Romain Deville ([`ea4aca9`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/ea4aca97887b2a593815faf6f427367d54921bb4)) 🔏
+  * 🔧(data): Add Dr. title to my name by Romain Deville ([`3d88477`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/3d88477d5910812b90f41cc78aed8205fadbaf66)) 🔏
+
+### 🔊 Others
+
+  * 🔨(Makefile): Add deploy stage and update all to auto deploy by Romain Deville ([`0bc094b`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/0bc094bfa7f3b9fb88f08a531a8ef2c68c2feeb0)) 🔏
+
 ## v0.1.7 (2025-09-02)
 
 ### 🩹 Patch
