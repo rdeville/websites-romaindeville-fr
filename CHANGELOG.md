@@ -1,6 +1,15 @@
 <!-- markdownlint-disable-file -->
 # CHANGELOG
 
+## v0.1.9 (2025-09-24)
+
+### 🩹 Patch
+
+  * 🍱(static): Update rendered pdf by Romain Deville ([`bae9e18`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/bae9e1890659b24fbe270b520c2177402821337a))
+  * 🔧 Add missing microservice development (!12) by Romain Deville ([`2d39be5`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/2d39be53136bb1b843161ff3abc4abeab806fa66))
+  * 🔧(resume): Add microservice development into dougs experiences by Romain Deville ([`183a922`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/183a922e5933447ef49c8bcb315e362f6b2f18e3))
+  * 🔧(data): Add microservice development in dougs experiences by Romain Deville ([`5d81e0d`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/5d81e0d9490ba95d9949f5d31c0c3270b76e29f4))
+
 ## v0.1.8 (2025-09-16)
 
 ### 🩹 Patch
