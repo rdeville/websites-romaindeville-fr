@@ -90,7 +90,8 @@ experiences:
           Additionally, during 2024, we had:
 
           * **Migrated the Kubernetes deployment** from Kustomize to Helm
-          * **Imported** the majority of infrastructure resources into Terraform
+          * **Imported into IaC** (Terraform) the existing infrastructure
+            resources
           * Deployed a new application in an **ISO 27001 context and in a
             SecNumCloud** environment.
 
@@ -109,6 +110,7 @@ experiences:
           * **Identifying** tasks that can be automated,
           * **Designing and developing** solutions allowing the implementation
             of task automation,
+          * **Development** of core micro-services for the platform,
           * **Documenting** automated procedures to be handled by other teams.
 
           Alongside these activities, I trained my colleagues in the use of
