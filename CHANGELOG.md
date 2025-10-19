@@ -1,6 +1,15 @@
 <!-- markdownlint-disable-file -->
 # CHANGELOG
 
+## v0.1.10 (2025-10-19)
+
+### 🩹 Patch
+
+  * ✏️ Mainly fix some typos in resume and data (!13) by Romain Deville ([`2da546a`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/2da546a6b20f7fd80a58f824b2216fff5cfa22c9))
+  * ✏️(resume/fr): Fix typos in latex resume by Romain Deville ([`6371af0`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/6371af0784e24b7d1b28dec5da1f471395b86432)) 🔏
+  * ✏️(data): Fix typo in french data by Romain Deville ([`af53ac4`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/af53ac479a392258b4f8bd334de3e608d5f095af)) 🔏
+  * 🍱(static/files/resume): Update PDF rendered resume by Romain Deville ([`905c658`](https://framagit.org/rdeville-public/websites/romaindeville-fr/-/commit/905c6585aaa8de221e91d8e8d710f63df2f60b81)) 🔏
+
 ## v0.1.9 (2025-09-24)
 
 ### 🩹 Patch
